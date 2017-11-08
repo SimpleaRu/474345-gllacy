@@ -5,18 +5,17 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
     <header>
       <nav>
         <img src="something" class="index-logo" height="20" width="50" alt="pics" >
         <ul class="header-menu">
           <li><a href="catalog.html" class="header-menu-catalog">Каталог</a>
             <ul class="visibility-hidden">
-              <li><a href="">Новинки</a> </li>
-              <li><a href="">Сливочное</a> </li>
-              <li><a href="">Щербеты</a> </li>
-              <li><a href="">Фруктовый лед</a> </li>
-              <li><a href="">Мелорин</a> </li>
+              <li><a href="#">Новинки</a> </li>
+              <li><a href="#">Сливочное</a> </li>
+              <li><a href="#">Щербеты</a> </li>
+              <li><a href="#">Фруктовый лед</a> </li>
+              <li><a href="#">Мелорин</a> </li>
             </ul>
           </li>
           <li><a href="delivery.html">Доставка и оплата</a></li>
@@ -24,7 +23,7 @@
         </ul>
         <ul class="enter-menu">
           <li class="enter-search"><img src="something" height="10" width="10" alt="pics" ></li>
-          <li class="enter-search"><img src="something" height="10" width="10" alt="pics"> <span>Вход</span></li>
+          <li class="enter-button"><img src="something" height="10" width="10" alt="pics"> <span>Вход</span></li>
           <li class="enter-chart"><img src="something" height="10" width="10" alt="pics"> <span>Пусто</span></li>
         </ul>
       </nav>
@@ -32,8 +31,19 @@
         С 10 до 20, ежедневно
         <span class="contacts-strong">8 812 450-25-25</span>
       </p>
+      <div class="enter-form">
+        <form action="URL"></form>
+        <ul>
+          <li><input type="text" placeholder="Электронная почта"></li>
+          <li><input type="text" placeholder="Пароль"></li>
+          <li><input type="submit" value="Войти">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </li>
+          
+        </ul>
+      </div>
     </header>
-
     <main>
       <h1 class="visibility-hidden">Глейси - магазин мороженного собственного производства!</h1>
       <section class="carousel">
@@ -71,20 +81,18 @@
           <li>
             <div class="ice-cream orange">
               <img src="ice-cream-orange" height="50" width="50"  id="orange" alt="pics" >
-              <p class="orange-price">
-                <span>310Р</span>
+              <p class="orange-price">310Р
                 <span class="ice-cream-weight">/кг</span>
               </p>
               <p>Сливочное с апельсиновым джемом и цитрусовой стружкой
               </p>
-              <a href="" class="orange-view">Быстрый просмотр</a>
+              <a href="#" class="orange-view">Быстрый просмотр</a>
             </div>
           </li>
           <li>
             <div class="ice-cream coffee">
                 <img src="ice-cream-coffee" height="50" width="50"  id="coffee" alt="pics">
-                <p class="coffee-price">
-                  <span>380Р</span>
+                <p class="coffee-price">380Р
                   <span class="ice-cream-weight">/кг</span>
                 </p>
                 <p>Сливочно-кофейное с кусочками шоколада</p>
@@ -94,8 +102,7 @@
           <li>
             <div class="ice-cream strawberry">
                 <img src="ice-cream-strawberry" height="50" width="50" id="strawberry" alt="pics">
-                <p class="strawberry-price">
-                  <span>355Р</span>
+                <p class="strawberry-price">355Р
                   <span class="ice-cream-weight">/кг</span>
                 </p>
                 <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
@@ -103,14 +110,13 @@
             </div>
           </li>
           <li>
-            <div class="ice-cream cremeBrulee">
-                <img src="ice-cream-cremeBrulee" height="50" width="50" id="cremeBrulee" alt="pics">
-                <p class="cremeBrulee-price">
-                  <span>415Р</span>
+            <div class="ice-cream cremebrulee">
+                <img src="ice-cream-cremebrulee" height="50" width="50" id="cremebrulee" alt="pics">
+                <p class="cremebrulee-price">415Р
                   <span class="ice-cream-weight">/кг</span>
                 </p>
                 <p>Сливочное крем-брюле с карамельной подливкой</p>
-                <a href="#" class="cremeBrulee-view">Быстрый просмотр</a>
+                <a href="#" class="cremebrulee-view">Быстрый просмотр</a>
             </div>
           </li>
         </ul>
@@ -164,7 +170,7 @@
       </section>
       <article class="recipe">
          <p>Новое в нашем блоге</p>
-         <a href="" class="recipe-sherbet">
+         <a href="#" class="recipe-sherbet">
             10 способов сервировки 
             фруктовых щербетов к 
             столу
@@ -195,36 +201,53 @@
             </p>
             <button type="button" class="map-button">Форма обратной связи</button>
         </div>
+        <div class="feed-back">
+          <h3>Мы обязательно вам ответим!</h3>
+          <div class="feed-back-close "></div>
+          <form action="URL">
+            <p>
+              <input type="text" placeholder="Как вас зовут?">
+            </p>
+            <p>
+              <input type="text" placeholder="Ваша почта для ответа?">
+            </p>
+            <p>
+              <textarea name="feed-back" cols="30" rows="5"></textarea>
+            </p>
+            <p>
+              <input type="submit" value="Отправить">
+            </p>
+          </form>
+        </div>
       </div>
     </main>
-
     <footer>
       <div class="footer-social">
         <ul>
-          <li><a href="twitter"><img src="something" height="10" width="10" alt="pics"></a></li>
-          <li><a href="Instagram"><img src="something" height="10" width="10" alt="pics"></a></li>
-          <li><a href="Facebook"><img src="something" height="10" width="10" alt="pics"></a></li>
-          <li><a href="VK"><img src="something" height="10" width="10" alt="pics"></a></li>
+          <li><a href="twitter"></a></li>
+          <li><a href="Instagram"></a></li>
+          <li><a href="Facebook"></a></li>
+          <li><a href="VK"></a></li>
         </ul>
       </div>
       <div class="footer-links">
         <ul>
           <li>
-            <a href="">Для поставщиков</a>
+            <a href="#">Для поставщиков</a>
           </li>
           <li>
-            <a href="">Наши документы</a>
+            <a href="#">Наши документы</a>
           </li>
           <li>
-            <a href="">О производстве</a>
+            <a href="#">О производстве</a>
           </li>
           <li>
-            <a href="">Экологические стандарты</a>
+            <a href="#">Экологические стандарты</a>
           </li>
         </ul>
       </div>
       <div class="footer-HTML-Academy">
-        <img src="something" width="100" height="30" alt="pics">
+        <a href="https://htmlacademy.ru/"></a>
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</p>
       </div>
     </footer>
