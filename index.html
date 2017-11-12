@@ -11,7 +11,7 @@
         <img src="img/gllacy-logo.svg" class="index-logo" height="64" width="154" alt="Gllacy">
         <ul class="header-menu">
           <li><a href="#" class="header-menu-catalog">Каталог</a>
-            <ul class="visibility-hidden">
+            <ul class="header-menu-catalog-submenu">
               <li><a href="#">Новинки</a> </li>
               <li><a href="catalog.html">Сливочное</a> </li>
               <li><a href="#">Щербеты</a> </li>
@@ -23,9 +23,9 @@
           <li><a href="about-company.html">О конмпании</a></li>
         </ul>
         <ul class="enter-menu">
-          <li class="enter-search"><img src="something" height="10" width="10" alt="pics" ></li>
-          <li class="enter-button"><img src="something" height="10" width="10" alt="pics"> <span>Вход</span></li>
-          <li class="enter-chart"><img src="something" height="10" width="10" alt="pics"> <span>Пусто</span></li>
+          <li class="enter-search"><a href="#"> <span class="visibility-hidden">Поиск</span></a></li>
+          <li class="enter-button"> <a href="#">Вход</a> </li>
+          <li class="enter-chart"><a href="#">Пусто</a></li>
         </ul>
       </nav>
       <p class="header-phone">
@@ -33,20 +33,33 @@
         <span class="contacts-strong">8 812 450-25-25</span>
       </p>
       <div class="enter-form">
-        <form action="URL"></form>
-        <ul>
-          <li><input type="text" placeholder="Электронная почта"></li>
-          <li><input type="text" placeholder="Пароль"></li>
-          <li><input type="submit" value="Войти">
+        <form action="URL" method="get" name="enter-form">
+         <p>
+            <label for="enter-form-email" class="visibility-hidden">Электронная почта</label>
+            <input type="email" placeholder="Электронная почта" id="enter-form-email" name="enter-form-email">
+         </p>
+          <p>
+            <label for="enter-form-password" class="visibility-hidden">Пароль</label>
+            <input type="text" placeholder="Пароль" id="enter-form-password" name="enter-form-password">
+          </p>
+          <p>
+            <button type="submit" class="button">Войти</button>
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
-          </li>
-        </ul>
+          </p>
+      </form>
+      </div>
+      <div class="search">
+        <form action="URL" method="get">
+          <label for="search-string" class="visibility-hidden">Поиск по сайту</label>
+          <input type="text" name="search-string" id="search-string" placeholder="Что ищем?">
+        </form>
       </div>
     </header>
+
     <main>
       <h1 class="visibility-hidden">Глейси - магазин мороженного собственного производства!</h1>
-      <section class="carousel">
+      <div class="carousel">
         <p class="carousel-text">Крем-брюле и пломбир с малиновым джемом
         </p>
         <p class="carousel-button">Давайте оба!</p>
@@ -55,7 +68,7 @@
           <li><input type="radio"  name="carousel" value="img2"></li>
           <li><input type="radio"  name="carousel" value="img3"></li>
         </ul>
-      </section>
+      </div>
       <section class="special-offers">
         <h2 class="visibility-hidden">Специальные предложения</h2>
         <div class="offer-raspberries">
@@ -127,8 +140,7 @@
           <ul>
             <li>
               <div class="about-facts">
-                <img src="img/wafer-icy.svg" height="49" width="49" alt="wafer-icy" >
-                <p>
+                <p class="wafer-icy">
                  Все наше мороженное изготавливается на собственном 
                  производсте, с использованием современного оборудования
                  и проверенных временем технологий.
@@ -137,8 +149,7 @@
             </li>
             <li>
               <div class="about-facts">
-                <img src="img/wafer-leaf.svg" height="49" width="49" alt="wafer-leaf">
-                <p>
+                <p class="wafer-leaf">
                   Для приготовления мороженного используются настоящие 
                   сливки и молоко высочайшего качества. Все дополнительные
                   инградиенты и добавки произведены из натурального,
@@ -148,8 +159,7 @@
             </li>
             <li>
               <div class="about-facts">
-                <img src="img/wafer-cow.svg" height="49" width="49" alt="wafer-cow" >
-                <p>
+                <p class="wafer-cow">
                   Закупка инградиентов производится только у проверенных
                   фермерских хозяйств и компаний, с которыми нам связывает
                   долговременное сотрудничество.
@@ -158,8 +168,7 @@
             </li> 
             <li>
               <div class="about-facts">
-                <img src="img/wafer-thermometer.svg" height="49" width="49" alt="wafer-thermometer" >
-                <p>
+                <p class="wafer-thermometer">
                   Доставка нашего мороженного до заказчиков осуществляется
                   в специальном термопакете, который не дает мороженному
                   растаять в пути и позволяет сохранить превосходный вкус.
@@ -169,23 +178,25 @@
           </ul>
       </section>
       <article class="recipe">
-         <p>Новое в нашем блоге</p>
+         <h3 class="recipe-head">Новое в нашем блоге</h3>
          <a href="#" class="recipe-sherbet">
             10 способов сервировки 
             фруктовых щербетов к 
             столу
          </a>
       </article>
-      <div class="subscription">
+      <section class="subscription">
+        <h3 class="visibility-hidden">Оформить подписку на новинки</h3>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе 
           всего самого вкусного, что у нас происходит. Обещаем не спамить
           и не слать всякой ненужной ерунды. Честно =)
         </p>
-        <form action="URL">
-          <input type="email" placeholder="Электронная почта">
-          <button type="submit">Отправить</button>
+        <form action="URL" method="get">
+          <label for="subscription-email" class="visibility-hidden">Ваша почта</label>
+          <input type="email" placeholder="Электронная почта" id="subscription-email" name="subscription-email">
+          <button class="button" type="submit">Отправить</button>
         </form>
-      </div>
+      </section>
       <div class="map">
         <img src="img/map-original.jpg" height="430" width="1200" alt="map">
         <div class="map-contacts">
@@ -199,35 +210,39 @@
                 <span class="contacts-strong">8 812 450-25-25</span>
                (с 10 до 20 ежедневно)
             </p>
-            <button type="button" class="map-button">Форма обратной связи</button>
-        </div>
-        <div class="feed-back">
-          <h3>Мы обязательно вам ответим!</h3>
-          <div class="feed-back-close "></div>
-          <form action="URL">
-            <p>
-              <input type="text" placeholder="Как вас зовут?">
-            </p>
-            <p>
-              <input type="text" placeholder="Ваша почта для ответа?">
-            </p>
-            <p>
-              <textarea name="feed-back" cols="30" rows="5"></textarea>
-            </p>
-            <p>
-              <input type="submit" value="Отправить">
-            </p>
-          </form>
+            <button type="button" class="button" id="feed-back-show">Форма обратной связи</button>
         </div>
       </div>
+      <section class="feed-back"> 
+          <h3>Мы обязательно вам ответим!</h3>
+          <form action="URL" method="get">
+            <p>
+              <label for="feed-back-name" class="visibility-hidden"> Ваше имя</label>
+              <input type="text" placeholder="Как вас зовут?" id="feed-back-name" name="feed-back-name">
+            </p>
+            <p>
+              <label for="feed-back-email" class="visibility-hidden"> Ваша почта</label>
+              <input type="text" placeholder="Ваша почта для ответа?" id="feed-back-email" name="feed-back-email">
+            </p>
+            <p>
+              <label for="feed-back-comment" class="visibility-hidden">Комментарий</label>
+              <textarea cols="30" rows="5" id="feed-back-comment" name="feed-back-comment"></textarea>
+            </p>
+            <p>
+              <button class="button" type="submit">Отправить</button>
+            </p>
+          </form>
+          <button class="modal-close" type="button"><span class="visibility-hidden">Закрыть</span> </button>
+        </section>
     </main>
+
     <footer>
       <div class="footer-social">
         <ul>
-          <li><a href="twitter"></a></li>
-          <li><a href="Instagram"></a></li>
-          <li><a href="Facebook"></a></li>
-          <li><a href="VK"></a></li>
+          <li><a href="twitter"><span class="visibility-hidden">Твиттер</span></a></li>
+          <li><a href="Instagram"><span class="visibility-hidden">Инстаграм</span></a></li>
+          <li><a href="Facebook"><span class="visibility-hidden">Фейсбук</span></a></li>
+          <li><a href="VK"><span class="visibility-hidden">Вконтакте</span></a></li>
         </ul>
       </div>
       <div class="footer-links">
