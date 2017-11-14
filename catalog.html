@@ -28,48 +28,49 @@
             <ul>
                 <li class="enter-search"><a href="#"> <span class="visibility-hidden">Поиск</span></a></li>
                 <li class="enter-button"> <a href="#">Вход</a> </li>
-                <li class="enter-chart"><a href="#">2 товара</a></li>
+                <li class="enter-chart"><a href="#">2 товара</a>
+                    <div class="basket">
+                        <table>
+                            <tr>
+                                <td>
+                                    <button class="close-button">
+                                        <span class="visibility-hidden">Удалить</span>
+                                    </button>
+                                </td> 
+                                <td class="ice-cream-orange-mini"></td>
+                                <td>Пломбир с апельсиновым Джемом</td>
+                                <td> 1,5 кг х <span class="basket-price">200 руб</span></td> 
+                                <td>300 руб</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="close-button">
+                                        <span class="visibility-hidden">Удалить</span>
+                                    </button>
+                                </td> 
+                                <td class="ice-cream-strawberry-mini"></td>
+                                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                                <td> 1,5 кг х <span class="basket-price">300 руб</span></td> 
+                                <td>450 руб</td>
+                            </tr>
+                        </table>
+                        <p class="sum-price">Итого:750 руб.</p>
+                        <a href="#" class="button"> Оформить заказ</a>
+                    </div>
+                </li>
             </ul>
         </nav>
         <p class="header-phone">
             С 10 до 20, ежедневно
             <span class="contacts-strong">8 812 450-25-25</span>
         </p>
-        <div class="basket">
-            <table>
-                <tr>
-                    <td>
-                        <button class="close-button">
-                            <span class="visibility-hidden">Удалить</span>
-                        </button>
-                    </td> 
-                    <td class="ice-cream-orange-mini"></td>
-                    <td>Пломбир с апельсиновым Джемом</td>
-                    <td> 1,5 кг х <span class="basket-price">200 руб</span></td> 
-                    <td>300 руб</td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="close-button">
-                            <span class="visibility-hidden">Удалить</span>
-                        </button>
-                    </td> 
-                    <td class="ice-cream-strawberry-mini"></td>
-                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td> 1,5 кг х <span class="basket-price">300 руб</span></td> 
-                    <td>450 руб</td>
-                </tr>
-            </table>
-            <p class="sum-price">Итого:750 руб.</p>
-            <a href="#" class="button"> Оформить заказ</a>
-        </div>
     </header>
     
     <main>
         <ul class="main-path">
             <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="creamy.html">Сливочное</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a>Сливочное</a></li>
         </ul>
         <h1>Сливочное мороженое</h1>
         <section class="filters">
@@ -82,8 +83,9 @@
                         <option>сначала дорогие</option>
                         <option>по жирности</option>
                     </select>
-                    <label for="filters-range">Цена: 100 руб. - 500 руб.</label>
-                    <input type="range" id="filters-range">
+                    <label>Цена: 100 руб. - 500 руб.
+                        <input type="range" name="filters-price">
+                    </label>
                     <fieldset >
                         <legend>Жирность:</legend>
                         <label>
@@ -101,11 +103,21 @@
                     </fieldset>
                     <fieldset >
                             <legend>Наполнители:</legend>
-                            <input type="checkbox" name="chocolate" checked>шоколадные
-                            <input type="checkbox" name="powdered-sugar" checked>сахарные присыпки
-                            <input type="checkbox" name="fruits">фрукты
-                            <input type="checkbox" name="syrups">сиропы
-                            <input type="checkbox" name="jams">джемы
+                            <label>
+                                <input type="checkbox" name="chocolate" checked>шоколадные
+                            </label>
+                            <label>
+                                <input type="checkbox" name="powdered-sugar" checked>сахарные присыпки       
+                            </label>
+                            <label>
+                                <input type="checkbox" name="fruits">фрукты    
+                            </label>
+                            <label>
+                                <input type="checkbox" name="syrups">сиропы     
+                            </label>
+                            <label>
+                                <input type="checkbox" name="jams">джемы      
+                            </label>
                     </fieldset>
                     <button type="submit" class="filters-submit">Применить</button>
                 </form>

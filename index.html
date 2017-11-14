@@ -24,8 +24,33 @@
           <li><a href="about-company.html">О конмпании</a></li>
         </ul>
         <ul class="enter-menu">
-          <li class="enter-search"><a href="#"> <span class="visibility-hidden">Поиск</span></a></li>
-          <li class="enter-button"> <a href="#">Вход</a> </li>
+          <li class="enter-search"><a href="#"> <span class="visibility-hidden">Поиск</span></a>
+            <div class="search">
+              <form action="URL" method="get">
+                <label for="search-string" class="visibility-hidden">Поиск по сайту</label>
+                <input type="text" name="search-string" id="search-string" placeholder="Что ищем?">
+              </form>
+            </div>
+          </li>
+          <li class="enter-button"> <a href="#">Вход</a> 
+            <div class="enter-form">
+              <form action="URL" method="get" name="enter-form">
+               <p>
+                  <label for="enter-form-email" class="visibility-hidden">Электронная почта</label>
+                  <input type="email" placeholder="Электронная почта" id="enter-form-email" name="enter-form-email">
+               </p>
+                <p>
+                  <label for="enter-form-password" class="visibility-hidden">Пароль</label>
+                  <input type="text" placeholder="Пароль" id="enter-form-password" name="enter-form-password">
+                </p>
+                <p>
+                  <button type="submit" class="button">Войти</button>
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </p>
+              </form>
+            </div>
+          </li>
           <li class="enter-chart"><a href="#">Пусто</a></li>
         </ul>
       </nav>
@@ -33,29 +58,6 @@
         С 10 до 20, ежедневно
         <span class="contacts-strong">8 812 450-25-25</span>
       </p>
-      <div class="enter-form">
-        <form action="URL" method="get" name="enter-form">
-         <p>
-            <label for="enter-form-email" class="visibility-hidden">Электронная почта</label>
-            <input type="email" placeholder="Электронная почта" id="enter-form-email" name="enter-form-email">
-         </p>
-          <p>
-            <label for="enter-form-password" class="visibility-hidden">Пароль</label>
-            <input type="text" placeholder="Пароль" id="enter-form-password" name="enter-form-password">
-          </p>
-          <p>
-            <button type="submit" class="button">Войти</button>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </p>
-      </form>
-      </div>
-      <div class="search">
-        <form action="URL" method="get">
-          <label for="search-string" class="visibility-hidden">Поиск по сайту</label>
-          <input type="text" name="search-string" id="search-string" placeholder="Что ищем?">
-        </form>
-      </div>
     </header>
 
     <main>
