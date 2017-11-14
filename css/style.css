@@ -1,7 +1,19 @@
 body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Tahoma', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
     background: #849d8f;
-    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
 }
-li {
-    list-style-type: none;
-}
+a {
+    text-decoration: none;
+  }
+  .carousel {
+      width: 1045px;
+      height: 881px;
+      background-image: url('../img/Icy_Front_1.png');
+
+  }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Catalog</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,8 +27,33 @@
                 <li><a href="about-company.html">О конмпании</a></li>
             </ul>
             <ul>
-                <li class="enter-search"><a href="#"> <span class="visibility-hidden">Поиск</span></a></li>
-                <li class="enter-button"> <a href="#">Вход</a> </li>
+                <li class="enter-search"><a href="#"> <span class="visibility-hidden">Поиск</span></a>
+                    <div class="search">
+                        <form action="URL" method="get">
+                          <label for="search-string" class="visibility-hidden">Поиск по сайту</label>
+                          <input type="text" name="search-string" id="search-string" placeholder="Что ищем?">
+                        </form>
+                    </div>
+                </li>
+                <li class="enter-button"> <a href="#">Вход</a>
+                    <div class="enter-form">
+                        <form action="URL" method="get" name="enter-form">
+                         <p>
+                            <label for="enter-form-email" class="visibility-hidden">Электронная почта</label>
+                            <input type="email" placeholder="Электронная почта" id="enter-form-email" name="enter-form-email">
+                         </p>
+                          <p>
+                            <label for="enter-form-password" class="visibility-hidden">Пароль</label>
+                            <input type="text" placeholder="Пароль" id="enter-form-password" name="enter-form-password">
+                          </p>
+                          <p>
+                            <button type="submit" class="button">Войти</button>
+                            <a href="#">Забыли пароль?</a>
+                            <a href="#">Новая регистрация</a>
+                          </p>
+                        </form>
+                    </div>
+                </li>
                 <li class="enter-chart"><a href="#">2 товара</a>
                     <div class="basket">
                         <table>
