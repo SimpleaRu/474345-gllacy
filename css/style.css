@@ -8,6 +8,13 @@ body {
     background: #849d8f;
     color: #ffffff;
 }
+.visibility-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 a {
     text-decoration: none;
   }
@@ -15,5 +22,43 @@ a {
       width: 1045px;
       height: 881px;
       background-image: url('../img/Icy_Front_1.png');
-
+  }
+  .main-navigation a {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #ffffff;
+  }
+  .footer-links a {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    text-decoration: underline;
+    color: white;
+  }
+  .footer-links .bold {
+      font-weight: bold;
+  }
+  .header-menu a {
+    text-decoration: underline;
+  }
+  .main-navigation li,
+  .sales-hits li,
+  .about-gllacy li,
+  .carousel-img,
+  footer li {
+      list-style: none;
+  }
+  .button {
+        background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+        box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+        padding: 10px 15px 10px 15px;
+        border-radius: 20px;
+        border: none;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        color: white;
   }
