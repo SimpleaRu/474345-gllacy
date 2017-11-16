@@ -1,4 +1,4 @@
-body {
+  body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', 'Tahoma', 'Arial', sans-serif;
@@ -7,15 +7,15 @@ body {
     font-weight: normal;
     background: #849d8f;
     color: #ffffff;
-}
-.visibility-hidden {
+  }
+  .visibility-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
   }
-a {
+  a {
     text-decoration: none;
   }
   .carousel {
@@ -36,6 +36,13 @@ a {
     text-decoration: underline;
     color: white;
   }
+  .footer-HTML-Academy a {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    text-decoration: underline;
+    color: white;
+  }
   .footer-links .bold {
       font-weight: bold;
   }
@@ -46,7 +53,7 @@ a {
   .sales-hits li,
   .about-gllacy li,
   .carousel-img,
-  footer li {
+  .footer li {
       list-style: none;
   }
   .button {
@@ -54,11 +61,67 @@ a {
         background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
         background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
         box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-        padding: 10px 15px 10px 15px;
+        text-align: center;
+        padding: 7px 15px 7px 15px;
         border-radius: 20px;
         border: none;
         font-size: 18px;
         line-height: 24px;
         font-weight: bold;
         color: white;
+  }
+
+  .offer-raspberries {
+    background-image: url('../img/offer-raspberries.jpg');
+    width: 560px;
+    height: 230px;
+    box-sizing: border-box;
+    padding: 19px;
+    border-radius: 20px;
+  }
+  .offer-raspberries p {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    color: white;
+  }
+  .offer-raspberries h3 {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+
+  .recipe-sherbet {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+  }
+  .recipe {
+    width: 560px;
+    height: 220px;
+    background-image: url('../img/strawberry_background.jpg');
+    background-position: 18% 40%;
+    border-radius: 20px;
+  }
+  .recipe-head {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    color: black;
+    padding: 27px 0 5px 20px;
+    margin: 0 0 0 0;
+  }
+  .recipe-sherbet p {
+    display: inline-block;
+    width: 281px;
+    text-decoration: underline;
+    padding: 0 0 0 20px;
+    margin: 0 0 0 0;
+  }
+  .about-gllacy{
+
   }
