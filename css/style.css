@@ -135,9 +135,124 @@
   .about-gllacy{
     background-image: url('../img/wafer.jpg');
     height: 306px;
-    width: 100%;
+    width: 1145px;
     margin: 27px 27px 27px 27px;
     color: black;
     box-sizing: border-box;
     padding: 19px;
+    border-radius: 20px;
   }
+  .about-gllacy ul {
+    padding: 0;
+  }
+  .about-gllacy p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #323232;
+  }
+  .about-gllacy h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #323232;
+    margin: 0;
+  }
+  .about-gllacy .wafer::before {
+    content:"";
+    float: left; 
+    width: 49px;
+    height: 49px;
+    padding: 5px;
+    background-repeat: no-repeat;
+  }
+  .about-gllacy .icy::before {
+    background-image: url('../img/wafer-icy.svg');
+  }
+  .about-gllacy .leaf::before {
+    background-image: url('../img/wafer-leaf.svg');
+  }
+  .about-gllacy .cow::before {
+    background-image: url('../img/wafer-cow.svg');
+  }
+  .about-gllacy .thermometer::before {
+    background-image: url('../img/wafer-thermometer.svg');
+  }
+  .subscription{
+    background-color: white;
+    background: 
+      url('../img/post_front.png') 50% 50% no-repeat,
+      url('../img/post_background.png');
+    width: 560px;
+    height: 220px;
+    margin: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 19px;
+  }
+  .subscription p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #5a5a5a;
+  }
+  .subscription input {
+    width: 367px;
+    height: 42px;
+    border-radius: 10px;
+    border: 1px solid #d3d3d2;
+  }
+  .map-contacts {
+      width: 302px;
+      height: 305px;
+      background: white;
+      border-radius: 15px;
+      box-sizing: border-box;
+      padding: 25px;
+      position: relative;
+  }
+  .map-contacts p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #323232;
+    margin: 0;
+  }
+  .map-contacts .contacts-strong {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #323232;
+  }
+  .map-contacts button {
+    position: absolute;
+    bottom: 25px;
+  }
+  .feed-back {
+    width: 478px;
+    height: 443px;
+    background-color: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  .feed-back h3 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: normal;
+    color: #323232;
+    display: inline-block;
+    float: left;
+    margin-top: 0;
+  }
+  .feed-back .modal-close {
+    background: url('../img/Х-big.svg') 50% 50% no-repeat;
+    width: 18px;
+    height: 18px;
+    border: none;
+    display: inline-block;
+    float: right;
+  }
+
+
