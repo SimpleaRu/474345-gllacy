@@ -79,13 +79,23 @@
     padding: 19px;
     border-radius: 20px;
   }
-  .offer-raspberries p {
+  .offer-chocolate {
+    background-image: url('../img/offer-chocolate.jpg');
+    width: 560px;
+    height: 230px;
+    box-sizing: border-box;
+    padding: 19px;
+    border-radius: 20px;
+  }
+  .offer-raspberries p,
+  .offer-chocolate p {
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
     color: white;
   }
-  .offer-raspberries h3 {
+  .offer-raspberries h3,
+  .offer-chocolate h3 {
     font-size: 35px;
     line-height: 41px;
     font-weight: bold;
@@ -123,5 +133,11 @@
     margin: 0 0 0 0;
   }
   .about-gllacy{
-
+    background-image: url('../img/wafer.jpg');
+    height: 306px;
+    width: 100%;
+    margin: 27px 27px 27px 27px;
+    color: black;
+    box-sizing: border-box;
+    padding: 19px;
   }
