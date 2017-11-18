@@ -106,7 +106,6 @@
   .enter-chart > a:hover::before {
     background: url('../img/chart_empty-black.svg') 50% 50% no-repeat;
   }
-
   .footer-links a {
     font-size: 13px;
     line-height: 18px;
