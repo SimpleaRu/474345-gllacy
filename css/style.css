@@ -47,7 +47,7 @@
  }
  .header-menu-catalog:active,
  .header-menu-delivery:active,
- .header-menu-company:actove {
+ .header-menu-company:active {
   box-shadow: inset 0px 2px 1px 1px #696969;
   
  }
