@@ -51,7 +51,7 @@
   box-shadow: inset 0px 2px 1px 1px #696969;
   
  }
- .enter-menu a {
+  .enter-menu a {
    font-size: 14px;
    font-weight: normal;
    line-height: 16px;
@@ -61,8 +61,39 @@
    background-color:  rgba(255,255,255, 0.2);
    padding: 7px 15px 7px 15px;
    border-radius: 15px;
+ } 
+ .header-menu-catalog-submenu {
+   visibility: hidden;
+   background: white;
+   border-radius: 10px;
  }
+ .header-menu-catalog-submenu li:hover {
+   background: #fbded7;
+ }
+ .header-menu-catalog-submenu li:active {
+  background: #f6b5a5;
+}
 
+ .header-menu-catalog-submenu a {
+   color: black;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 16px;
+   color: black;
+   text-decoration: none;
+ }
+ .header-menu-submenu:hover .header-menu-catalog-submenu {
+  visibility: visible;
+   margin: 0;
+ }
+  .enter-form a:hover {
+    color:#e84d37;
+  }
+  .enter-form-button-links p {
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
   .enter-button > a::before {
     content:"";
     float: left; 
@@ -77,7 +108,13 @@
     background-color:  rgba(255,255,255, 1);
     color: black;
   }
-
+  .enter-form-links  {
+    width: 150px;
+    margin: 0;
+  }
+  .enter-form-links a {
+    padding: 0;
+  }
   .enter-button > a:hover::before {
     background: url('../img/enter-active.svg') 50% 50% no-repeat;
   } 
@@ -113,6 +150,10 @@
     text-decoration: underline;
     color: white;
   }
+  .footer-links a:hover,
+  .footer-HTML-Academy a:hover {
+    color: #ffbc9e;
+  }
   .footer-HTML-Academy a {
     font-size: 12px;
     line-height: 18px;
@@ -121,10 +162,13 @@
     color: white;
   }
   .footer-links .bold {
-      font-weight: bold;
+    font-weight: bold;
   }
-  .header-menu a {
-    text-decoration: underline;
+  .header-menu > li {
+    display: inline-block;
+  }
+  .header-menu-catalog-submenu {
+    position: absolute;
   }
   .main-navigation li,
   .sales-hits li,
@@ -355,7 +399,7 @@
   .enter-form {
     width: 313px;
     height: 252px;
-    background-color: white;
+    background-color: #f8f7f4;
     border-radius: 15px;
     box-sizing: border-box;
     padding: 15px;
@@ -400,13 +444,20 @@
     color: #323232;
     margin: auto;
   }
-  .search-form input:hover {
+  .search-form input:hover,
+  .enter-form input:hover,
+  .subscription input:hover,
+  .feed-back input:hover,
+  .feed-back textarea:hover {
     border: 2px solid #c7c6c5;
   }
-  .search-form input:focus {
+  .search-form input:focus,
+  .enter-form input:focus,
+  .subscription input:focus,
+  .feed-back input:focus,
+  .feed-back textarea:focus  {
     border: 2px solid #8fbdec;
   }
-
   .footer-social a {
     display: inline-block;
     width: 38px;
@@ -435,4 +486,48 @@
   .footer-social li {
     display: inline-block;
   }
+  .ice-cream-description {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    color: white;
+    text-decoration: underline;
+  }
+  .ice-cream-price {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+  .ice-cream-weight {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+    color: white;
+  }
+  .carousel-text {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    color: white;
+  }
+  .header-phone {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+  .contacts-strong {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+  #bold {
+    font-weight: bold;
+  }
+
 

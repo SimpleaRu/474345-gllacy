@@ -12,9 +12,9 @@
       <nav class="main-navigation">
         <img src="img/gllacy-logo.svg" class="index-logo" height="64" width="154" alt="Gllacy">
         <ul class="header-menu">
-          <li><a href="#" class="header-menu-catalog">Каталог</a>
+          <li class="header-menu-submenu"><a href="#" class="header-menu-catalog">Каталог</a>
             <ul class="header-menu-catalog-submenu">
-              <li><a href="#">Новинки</a> </li>
+              <li><a href="#" id="bold">Новинки</a> </li>
               <li><a href="catalog.html">Сливочное</a> </li>
               <li><a href="#">Щербеты</a> </li>
               <li><a href="#">Фруктовый лед</a> </li>
@@ -44,11 +44,15 @@
                   <label for="enter-form-password" class="visibility-hidden">Пароль</label>
                   <input type="text" placeholder="Пароль" id="enter-form-password" name="enter-form-password">
                 </p>
-                <p>
-                  <button type="submit" class="button">Войти</button>
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </p>
+                <div class="enter-form-button-links">
+                  <p>
+                    <button type="submit" class="button">Войти</button>
+                  </p>
+                  <p class="enter-form-links">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                  </p>
+                </div>
               </form>
             </div>
           </li>
@@ -57,7 +61,7 @@
       </nav>
       <p class="header-phone">
         С 10 до 20, ежедневно
-        <span class="contacts-strong">8 812 450-25-25</span>
+        <p class="contacts-strong">8 812 450-25-25</p>
       </p>
     </header>
 
@@ -99,10 +103,10 @@
           <li>
             <div class="ice-cream orange">
               <img src="img/icy_orange.png" width="267" height="267" alt="Апельстновое" >
-              <p class="orange-price">310Р
+              <p class="ice-cream-price">310Р
                 <span class="ice-cream-weight">/кг</span>
               </p>
-              <p>Сливочное с апельсиновым джемом и цитрусовой стружкой
+              <p class="ice-cream-description">Сливочное с апельсиновым джемом и цитрусовой стружкой
               </p>
               <a href="#" class="button">Быстрый просмотр</a>
             </div>
@@ -110,30 +114,30 @@
           <li>
             <div class="ice-cream coffee">
                 <img src="img/icy_coffee.png" width="267" height="267" alt="Кофейное">
-                <p class="coffee-price">380Р
+                <p class="ice-cream-price">380Р
                   <span class="ice-cream-weight">/кг</span>
                 </p>
-                <p>Сливочно-кофейное с кусочками шоколада</p>
+                <p class="ice-cream-description">Сливочно-кофейное с кусочками шоколада</p>
                 <a href="#" class="button">Быстрый просмотр</a>
             </div>
           </li>
           <li>
             <div class="ice-cream strawberry">
                 <img src="img/icy_strawberry.png" width="267" height="267" alt="Клубничное">
-                <p class="strawberry-price">355Р
+                <p class="ice-cream-price">355Р
                   <span class="ice-cream-weight">/кг</span>
                 </p>
-                <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+                <p class="ice-cream-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
                 <a href="#" class="button">Быстрый просмотр</a>
             </div>
           </li>
           <li>
             <div class="ice-cream cremebrulee">
                 <img src="img/icy_cremeBrulee.png" width="267" height="267" alt="Крем-брюле">
-                <p class="cremebrulee-price">415Р
+                <p class="ice-cream-price">415Р
                   <span class="ice-cream-weight">/кг</span>
                 </p>
-                <p>Сливочное крем-брюле с карамельной подливкой</p>
+                <p class="ice-cream-description">Сливочное крем-брюле с карамельной подливкой</p>
                 <a href="#" class="button">Быстрый просмотр</a>
             </div>
           </li>
