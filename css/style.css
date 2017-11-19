@@ -44,13 +44,12 @@
   background-color: rgb(247, 246, 243);
   color:#333333;
   text-decoration: none;
- }
- .header-menu-catalog:active,
- .header-menu-delivery:active,
- .header-menu-company:active {
-  box-shadow: inset 0px 2px 1px 1px #696969;
-  
- }
+  }
+  .header-menu-catalog:active,
+  .header-menu-delivery:active,
+  .header-menu-company:active {
+   box-shadow: inset 0px 2px 1px 1px #696969;
+  }
   .enter-menu a {
    font-size: 14px;
    font-weight: normal;
@@ -61,11 +60,14 @@
    background-color:  rgba(255,255,255, 0.2);
    padding: 7px 15px 7px 15px;
    border-radius: 15px;
- } 
- .header-menu-catalog-submenu {
+  } 
+  .header-menu-catalog-submenu {
    visibility: hidden;
    background: white;
    border-radius: 10px;
+   margin-left: 0;
+   padding-left: 10px;
+   padding-right: 10px;
  }
  .header-menu-catalog-submenu li:hover {
    background: #fbded7;
@@ -81,11 +83,11 @@
    line-height: 16px;
    color: black;
    text-decoration: none;
- }
- .header-menu-submenu:hover .header-menu-catalog-submenu {
-  visibility: visible;
+  }
+  .header-menu-submenu:hover .header-menu-catalog-submenu {
+   visibility: visible;
    margin: 0;
- }
+  }
   .enter-form a:hover {
     color:#e84d37;
   }
@@ -174,7 +176,10 @@
   .sales-hits li,
   .about-gllacy li,
   .carousel-img,
-  .footer li {
+  .footer li,
+  .catalog-ice-cream li,
+  .main-path,
+  .catalog-page-links  {
       list-style: none;
   }
   .button {
@@ -200,7 +205,6 @@
     box-shadow: inset 0 2px 1px 0 #975a4b;
 
   }
-
   .offer-raspberries {
     background-image: url('../img/offer-raspberries.jpg');
     width: 560px;
@@ -376,7 +380,8 @@
     float: left;
     margin-top: 0;
   }
-  .feed-back .modal-close {
+  
+  .feed-back .close-button {
     background: url('../img/Х-big.svg') 50% 50% no-repeat;
     width: 18px;
     height: 18px;
@@ -449,14 +454,14 @@
   .subscription input:hover,
   .feed-back input:hover,
   .feed-back textarea:hover {
-    border: 2px solid #c7c6c5;
+    border: 1px solid #c7c6c5;
   }
   .search-form input:focus,
   .enter-form input:focus,
   .subscription input:focus,
   .feed-back input:focus,
   .feed-back textarea:focus  {
-    border: 2px solid #8fbdec;
+    border: 1px solid #8fbdec;
   }
   .footer-social a {
     display: inline-block;
@@ -528,6 +533,180 @@
   }
   #bold {
     font-weight: bold;
+    border-bottom: 1px solid #c7c6c5;
   }
-
-
+  .basket {
+    background: #f8f7f4;
+    display:inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 16px;
+    color: black;
+  }
+  .basket table {
+    border-bottom: 1px solid #c7c6c5;
+  }
+  .basket .close-button  {
+    background: url('../img/Х-big.svg') 50% 50% no-repeat;
+    width: 11px;
+    height: 11px;
+    border: none;
+    display: inline-block;
+    float: right;
+    padding: 0;
+  }
+  .icy_table-description {
+    width: 220px;
+    
+  }
+  .basket .basket-price {
+    color: #999999;
+  }
+  .ice-cream-orange-mini {
+    width: 33px;
+    height: 33px;
+    background: url('../img/icy_orange_small.png') 50% 50% no-repeat;
+  }
+  .ice-cream-strawberry-mini {
+    width: 33px;
+    height: 33px;
+    background: url('../img/icy_strawberry_small.png') 50% 50% no-repeat;
+  }
+  .basket td {
+    padding: 10px 10px 10px 10px;
+  }
+  .basket .sum-price {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #323232;
+    text-align: right;
+  }
+  .basket .button {
+    float: right;
+  }
+  .enter-chart-full > a {
+    background-color: rgba(255,255,255, 1);
+    color: black;
+  }
+  .enter-chart-full > a::before {
+    content:"";
+    float: left; 
+    width: 21px;
+    height: 21px;
+    margin-right: 7px;
+    background: url('../img/chart_full.svg') 50% 50% no-repeat;
+  }
+  .main-path li {
+    display: inline-block;
+   
+  }
+  .main-path a {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    color: white;
+  }
+  .main-path a:hover {
+    color: #ffbc9e;
+  }
+  .main-path li:nth-child(1),
+  .main-path li:nth-child(2) {
+    text-decoration: underline;
+  }
+  .main-path li:nth-child(2)::before,
+  .main-path li:nth-child(3)::before {
+    content:"» ";
+    text-decoration: none;
+  }
+  .catalog-h1 {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 41px;
+    color: white;
+  }
+  .filters{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    color: white;
+  }
+  .filters-select {
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.2);
+    border: 0px;
+    color: white;
+  }
+  .filters-select option {
+    color: black;
+  }
+  .filters-submit {
+    background-color: rgba(255,255,255, 0.2);
+    text-align: center;
+    padding: 7px 15px 7px 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    color: white;
+  }
+  .filters-submit:hover {
+    background-color: rgba(255,255,255);
+    color: black;
+  }
+  .filters-submit:active {
+    background-color: rgba(234,234,234); 
+    box-shadow: inset 0 2px 1px 0 #6a6b6a;
+    border: 0;
+  }
+  .catalog-page-links li {
+    display: inline-block; 
+    
+  }
+  .catalog-page-links a {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+  }
+  .catalog-page-links a:hover {
+    background-color: rgba(255,255,255, 0.2);
+  }
+  .catalog-page-links li:first-child a {
+    background-color: rgba(255,255,255, 1);
+    color: black;
+  }
+  .header-menu-catalog-selected {
+    background-color: #d07058;
+    border-radius: 15px;
+    text-align: center;
+    padding: 7px;
+  }
+  .ice-cream li {
+    display: inline-block;
+    width: 290px;
+  }
+  .ice-cream li:hover {
+    background-color: rgba(255,255,255, 0.2);
+    border-radius: 10px;
+  }
+  .about-gllacy li {
+    display: inline-block;
+    width: 483px;
+  }
+  .about-facts p {
+    margin-top: 5px;
+  }
+  .special-offers div,
+  .recipe,
+  .subscription {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  } 
