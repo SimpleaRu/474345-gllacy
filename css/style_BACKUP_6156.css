@@ -724,9 +724,12 @@
     display: inline-block;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     vertical-align: middle;
   } 
-  
+=======
+  } 
   .header-menu-catalog-submenu li:first-child {
     border-bottom: 1px solid gray;
   }
+>>>>>>> 01e469856aacfd21c6a7cfc44198bd4d7cc0bee6

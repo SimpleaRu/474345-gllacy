@@ -168,9 +168,6 @@
   .footer-links .bold {
     font-weight: bold;
   }
-  .header-menu .bold {
-    font-weight: bold;
-  }
   .header-menu > li {
     display: inline-block;
     vertical-align: middle;
@@ -545,6 +542,10 @@
     color: white;
     margin: 0;
   }
+  #bold {
+    font-weight: bold;
+    border-bottom: 1px solid #c7c6c5;
+  }
   .basket {
     background: #f8f7f4;
     display:inline-block;
@@ -726,7 +727,3 @@
     padding: 0;
     vertical-align: middle;
   } 
-  
-  .header-menu-catalog-submenu li:first-child {
-    border-bottom: 1px solid gray;
-  }
