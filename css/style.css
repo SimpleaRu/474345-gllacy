@@ -222,9 +222,10 @@
     border-radius: 20px;
   }
   .offer-chocolate {
-    background-image: url('../img/offer-chocolate.jpg');
     width: 560px;
     height: 230px;
+    background-color: #4a2e21;
+    background-image: url('../img/offer-chocolate.jpg');
     box-sizing: border-box;
     padding: 19px;
     border-radius: 20px;
@@ -253,6 +254,7 @@
     color: black;
   }
   .recipe {
+    background-color: white;
     width: 560px;
     height: 220px;
     background-image: url('../img/strawberry_background.jpg');
@@ -276,9 +278,10 @@
     vertical-align: middle;
   }
   .about-gllacy{
-    background-image: url('../img/wafer.jpg');
     height: 306px;
     width: 1145px;
+    background-color: #eaddc2;
+    background-image: url('../img/wafer.jpg');
     margin: 27px 27px 27px 27px;
     color: black;
     box-sizing: border-box;
@@ -477,29 +480,32 @@
   }
   .footer-social a {
     display: inline-block;
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
     opacity: 0.8;
     vertical-align: middle;
+    margin-left: 11px;
+    box-shadow: 0 0 0 2px #c0cdc6;
   }
   .footer-social a:hover {
     opacity: 1;
   }
   .social-twitter {
-    background: url('../img/twitter.svg') 50% 50% no-repeat,
-                url('../img/social-frames.png') 50% 50% no-repeat;
+    background: url('../img/twitter.svg') 50% 50% no-repeat;
+              
   }
   .social-instagram {
-    background: url('../img/isntagram.svg') 50% 50% no-repeat,
-                url('../img/social-frames.png') 50% 50% no-repeat;
+    background: url('../img/isntagram.svg') 50% 50% no-repeat;
+            
   }
   .social-facebook {
-    background: url('../img/fb.svg') 50% 50% no-repeat,
-                url('../img/social-frames.png') 50% 50% no-repeat;
+    background: url('../img/fb.svg') 50% 50% no-repeat;
+              
   }
   .social-vk {
-    background: url('../img/vk.svg') 50% 50% no-repeat,
-                url('../img/social-frames.png') 50% 50% no-repeat;
+    background: url('../img/vk.svg') 50% 50% no-repeat;
+            
   }
   .footer-social li {
     display: inline-block;
