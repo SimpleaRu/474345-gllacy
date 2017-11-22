@@ -18,10 +18,9 @@
   a {
     text-decoration: none;
   }
-  .carousel {
+  .carousel img {
       width: 1045px;
       height: 881px;
-      background-image: url('../img/Icy_Front_1.png');
   }
   .main-navigation a {
     font-size: 16px;
@@ -38,7 +37,6 @@
     text-align: center;
     padding: 7px;
   }
-
   .header-menu-catalog:hover,
   .header-menu-delivery:hover,
   .header-menu-company:hover {
