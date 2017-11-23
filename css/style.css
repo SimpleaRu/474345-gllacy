@@ -120,6 +120,9 @@
   .enter-button > a:hover::before {
     background: url('../img/enter-active.svg') 50% 50% no-repeat;
   } 
+  .enter-search {
+
+  }
 
   .enter-search > a::before {
     content:"";
@@ -169,10 +172,10 @@
   .header-menu .bold {
     font-weight: bold;
   }
-  .header-menu > li {
+/*   .header-menu > li {
     display: inline-block;
     vertical-align: middle;
-  }
+  } */
   .header-menu-catalog-submenu {
     position: absolute;
   }
@@ -421,6 +424,8 @@
     box-sizing: border-box;
     padding: 15px;
     margin-top: 10px;
+    position: absolute;
+    visibility: hidden;
   }
   .enter-form a {
     font-size: 13px;
@@ -450,6 +455,8 @@
     border-radius: 10px;
     background-color: #f8f7f4;
     text-align: center;
+    position: absolute;
+    visibility: hidden;
   }
   .search-form input {
     width: 311px;
@@ -732,4 +739,32 @@
   } 
   .header-menu-catalog-submenu li:first-child {
     border-bottom: 1px solid gray;
+  }
+/* Сетки */
+  .main-navigation,
+  .container-main-menu,
+  .container-main-menu .header-menu,
+  .enter-menu {
+    background-color: rgba(37,216,116, 0.2);
+    outline: 1px solid rgba(12,21,16, 0.2);
+  }
+
+  .main-navigation {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+  }
+  .container-main-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-main-menu .header-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .enter-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
   }
