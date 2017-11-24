@@ -1,12 +1,15 @@
   body {
     margin: 0;
     padding: 0;
+    max-width: 1200px;
     font-family: 'Roboto', 'Tahoma', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: normal;
     background: #849d8f;
     color: #ffffff;
+    box-sizing: border-box;
+    padding: 20px;
   }
   .visibility-hidden {
     position: absolute;
@@ -721,14 +724,10 @@
   .about-facts p {
     margin-top: 5px;
   }
-  .special-offers div,
-  .recipe,
-  .subscription {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-  } 
+  .special-offers  {
+    display: flex;
+    justify-content: space-between;
+  }
   .header-menu-catalog-submenu li:first-child {
     border-bottom: 1px solid gray;
   }
@@ -736,8 +735,10 @@
   .main-navigation,
   .container-main-menu,
   .container-main-menu .header-menu,
-  .enter-menu {
-    background-color: rgba(37,216,116, 0.2);
+  .enter-menu,
+  .special-offers,
+  .ice-cream {
+    background-color: rgba(199, 216, 37, 0.2);
     outline: 1px solid rgba(12,21,16, 0.2);
   }
   .main-navigation {
@@ -758,4 +759,9 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+  }
+  .ice-cream {
+    display: flex;
+   /*  justify-content: space-between; */
+    flex-wrap: wrap;
   }
