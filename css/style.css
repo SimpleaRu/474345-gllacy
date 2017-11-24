@@ -9,7 +9,7 @@
     background: #849d8f;
     color: #ffffff;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 25px;
   }
   .visibility-hidden {
     position: absolute;
@@ -708,9 +708,9 @@
     padding: 7px;
   }
   .ice-cream li {
-    display: inline-block;
-    width: 290px;
-    vertical-align: middle;
+   
+    width: 267px;
+    
   }
   .ice-cream li:hover {
     background-color: rgba(255,255,255, 0.2);
@@ -761,7 +761,8 @@
     padding: 0;
   }
   .ice-cream {
+    padding: 0;
     display: flex;
-   /*  justify-content: space-between; */
+    justify-content: space-between; 
     flex-wrap: wrap;
   }
