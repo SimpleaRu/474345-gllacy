@@ -120,16 +120,12 @@
   .enter-button > a:hover::before {
     background: url('../img/enter-active.svg') 50% 50% no-repeat;
   } 
-  .enter-search {
-
-  }
-
   .enter-search > a::before {
     content:"";
     float: left; 
     width: 21px;
     height: 19px;
-    background: url('../img/Search-loupe.svg') 50% 50% no-repeat;
+    background: url('../img/search-loupe.svg') 50% 50% no-repeat;
   }
   .enter-search > a:hover::before {
     background: url('../img/search-loupe-black.svg') 50% 50% no-repeat;
@@ -172,10 +168,6 @@
   .header-menu .bold {
     font-weight: bold;
   }
-/*   .header-menu > li {
-    display: inline-block;
-    vertical-align: middle;
-  } */
   .header-menu-catalog-submenu {
     position: absolute;
   }
@@ -748,7 +740,6 @@
     background-color: rgba(37,216,116, 0.2);
     outline: 1px solid rgba(12,21,16, 0.2);
   }
-
   .main-navigation {
     display: flex;
     justify-content: space-between;
