@@ -637,11 +637,10 @@
     margin-right: 7px;
     background: url('../img/chart_full.svg') 50% 50% no-repeat;
   }
-  .main-path li {
+/*   .main-path li {
     display: inline-block;
     vertical-align: middle;
-   
-  }
+  } */
   .main-path a {
     font-size: 14px;
     font-weight: normal;
@@ -651,14 +650,15 @@
   .main-path a:hover {
     color: #ffbc9e;
   }
-  .main-path li:nth-child(1),
+  /* .main-path li:nth-child(1),
   .main-path li:nth-child(2) {
     text-decoration: underline;
-  }
+  } */
   .main-path li:nth-child(2)::before,
   .main-path li:nth-child(3)::before {
     content:"» ";
     text-decoration: none;
+    padding-right: 5px;
   }
   .catalog-h1 {
     font-size: 35px;
@@ -671,6 +671,7 @@
     font-weight: normal;
     line-height: 16px;
     color: white;
+    width: 1150px;
   }
   .filters-select {
     border-radius: 10px;
@@ -701,11 +702,10 @@
     box-shadow: inset 0 2px 1px 0 #6a6b6a;
     border: 0;
   }
-  .catalog-page-links li {
+/*   .catalog-page-links li {
     display: inline-block; 
     vertical-align: middle;
-    
-  }
+  } */
   .catalog-page-links a {
     font-size: 16px;
     font-weight: normal;
@@ -761,7 +761,9 @@
   .footer-social ul,
   .footer-links,
   .carousel_wraper,
-  .carousel-changer {
+  .carousel-changer,
+  .catalog-page-links,
+  .main-path {
     background-color: rgba(199, 216, 37, 0.2);
     outline: 1px solid rgba(12,21,16, 0.2);
   }
@@ -920,7 +922,7 @@
   }
   .carousel_wraper .button {
     align-self: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .carousel-changer {
     padding: 0;
@@ -932,4 +934,39 @@
   }
   .carousel-changer li {
     padding-right: 10px;
+  }
+  .catalog-ice-cream {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .catalog-page-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 1150px;
+  }
+  .main-path {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 1150px;
+  }
+  .main-path li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .main-path a:not(.creamy-page) {
+    text-decoration: underline;
+  }
+  .button-carousel {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 44px;
+    color: white;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
