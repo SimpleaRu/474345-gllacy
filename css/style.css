@@ -549,12 +549,12 @@
     font-weight: bold;
     color: white;
   }
-  .carousel-text {
+/*   .carousel-text {
     font-size: 60px;
     line-height: 60px;
     font-weight: bold;
     color: white;
-  }
+  } */
   .header-phone {
     font-size: 14px;
     line-height: 16px;
@@ -579,6 +579,8 @@
     font-weight: normal;
     line-height: 16px;
     color: black;
+    position: absolute;
+    display: none;
   }
   .basket table {
     border-bottom: 1px solid #c7c6c5;
@@ -757,7 +759,9 @@
   .about-gllacy ul,
   .footer,
   .footer-social ul,
-  .footer-links {
+  .footer-links,
+  .carousel_wraper,
+  .carousel-changer {
     background-color: rgba(199, 216, 37, 0.2);
     outline: 1px solid rgba(12,21,16, 0.2);
   }
@@ -816,7 +820,6 @@
     justify-content: space-between;
     align-items: center;
   }
-  
    .footer-social ul {
     display: flex;
     justify-content: space-between;
@@ -841,6 +844,7 @@
     flex-direction: column;
     position: relative;
     z-index: 1;
+    margin-bottom: 10px; 
   }
   .ice-cream-cards:hover .button  {
     visibility: visible;
@@ -860,7 +864,7 @@
     top: 200px;
     left: 0;
   }
-  .ice-cream-cards::before {
+  .sales-hits .ice-cream-cards::before {
     content:"";
     position: absolute;
     left: 0;
@@ -884,6 +888,48 @@
   }
   .ice-cream-cards:hover::after {
     visibility: visible;
-    
   }
+  .carousel-text2,
+  .carousel-text3,
+  .icy-image2,
+  .icy-image3 {
+    display: none;
+  }
+  .carousel {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    z-index: -1;
+  }
+  .carousel-text1,
+  .carousel-text2,
+  .carousel-text3 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    color: white;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    width: 700px;
+    align-self: center;
   
+  }
+  .carousel_wraper {
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel_wraper .button {
+    align-self: center;
+    margin-bottom: 50px;
+  }
+  .carousel-changer {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 580px;
+  }
+  .carousel-changer li {
+    padding-right: 10px;
+  }
