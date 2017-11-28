@@ -68,9 +68,13 @@
    visibility: hidden;
    background: white;
    border-radius: 10px;
-   margin-left: 0;
-   padding-left: 10px;
-   padding-right: 10px;
+   margin: 0;
+   padding: 0;
+   position: absolute;
+ }
+ .header-menu-catalog-submenu li {
+   padding: 0;
+   margin: 0;
  }
  .header-menu-catalog-submenu li:hover {
    background: #fbded7;
@@ -170,9 +174,6 @@
   }
   .header-menu .bold {
     font-weight: bold;
-  }
-  .header-menu-catalog-submenu {
-    position: absolute;
   }
   .main-navigation li,
   .sales-hits li,
@@ -296,15 +297,6 @@
     width: 483px;
     margin-top: 10px;;
   }
-/*   .about-gllacy li:nth-child(2) {
-    order: 2;
-  }
-  .about-gllacy li:nth-child(3) {
-    order: 1;
-  }
-  .about-gllacy li:nth-child(4) {
-    order: 3;
-  } */
   .about-gllacy p {
     font-size: 16px;
     line-height: 22px;
@@ -787,8 +779,8 @@
     justify-content: space-between;
     padding: 0;
   }
-  .enter-menu li,
-  .header-menu li {
+  .enter-menu > li,
+  .header-menu > li {
     margin-right: 10px;
   }
   .ice-cream {
@@ -969,4 +961,14 @@
     border-radius: 30px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .menu-catalog-selectable {
+    background-color: #d07058;
+ 
+  }
+  .menu-catalog-selectable a {
+    color: white;
+  }
+  .menu-catalog-selectable a:hover {
+    color: black;
   }
