@@ -296,7 +296,7 @@
     width: 483px;
     margin-top: 10px;;
   }
-  .about-gllacy li:nth-child(2) {
+/*   .about-gllacy li:nth-child(2) {
     order: 2;
   }
   .about-gllacy li:nth-child(3) {
@@ -304,7 +304,7 @@
   }
   .about-gllacy li:nth-child(4) {
     order: 3;
-  }
+  } */
   .about-gllacy p {
     font-size: 16px;
     line-height: 22px;
