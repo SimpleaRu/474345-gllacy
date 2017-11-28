@@ -94,10 +94,12 @@
             </ul>
         </div>
         </nav>
-        <p class="header-phone">
-            С 10 до 20, ежедневно
-            <p class="contacts-strong">8 812 450-25-25</p>
-          </p>
+        <div class="header-phone-wraper">
+            <p class="header-phone">
+                С 10 до 20, ежедневно
+                <p class="contacts-strong">8 812 450-25-25</p>
+            </p>
+        </div>
     </header>
     
     <main>
@@ -110,13 +112,16 @@
         <section class="filters">
             <h3 class="visibility-hidden">Выберите мороженое</h3>
                 <form action="URL" method="get">
-                    <label for="filters-select">Сортировка</label>
-                    <select id="filters-select" name="filters-select" class="filters-select"> 
-                        <option selected>по популярности</option>
-                        <option>сначала недорогие</option>
-                        <option>сначала дорогие</option>
-                        <option>по жирности</option>
-                    </select>
+                    <label for="filters-select">Сортировка
+                        <p>
+                            <select id="filters-select" name="filters-select" class="filters-select"> 
+                                <option selected>по популярности</option>
+                                <option>сначала недорогие</option>
+                                <option>сначала дорогие</option>
+                                <option>по жирности</option>
+                            </select>
+                        </p>
+                    </label>
                     <label>Цена: 100 руб. - 500 руб.
                         <input type="range" name="filters-price">
                     </label>

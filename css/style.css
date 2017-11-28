@@ -76,6 +76,11 @@
    padding: 0;
    margin: 0;
  }
+ .header-menu-catalog-submenu a {
+   display: block;
+   padding: 5px 10px 5px 10px;
+ }
+
  .header-menu-catalog-submenu li:hover {
    background: #fbded7;
  }
@@ -561,6 +566,10 @@
     color: white;
     margin: 0;
   }
+  .header-phone-wraper {
+    width: 1150px;
+    text-align: right;
+  }
   .basket {
     background: #f8f7f4;
     display:inline-block;
@@ -664,6 +673,14 @@
     line-height: 16px;
     color: white;
     width: 1150px;
+  }
+  .filters form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 863px;
+  }
+  .filters fieldset {
+    border: 0;
   }
   .filters-select {
     border-radius: 10px;
