@@ -678,9 +678,11 @@
     display: flex;
     flex-wrap: wrap;
     width: 863px;
+    align-items: flex-start;
   }
   .filters fieldset {
     border: 0;
+    background-color: rgba(255,255,255, 0.2);
   }
   .filters-select {
     border-radius: 10px;
@@ -701,6 +703,7 @@
     font-weight: normal;
     line-height: 18px;
     color: white;
+    align-self: flex-end;
   }
   .filters-submit:hover {
     background-color: rgba(255,255,255);
@@ -741,18 +744,13 @@
     width: 267px;
     
   }
-/*   .ice-cream li:hover {
-    background-color: rgba(255,255,255, 0.2);
-    border-radius: 10px;
-  } */
-
   .about-facts p {
     margin-top: 5px;
   }
   .special-offers  {
     display: flex;
     justify-content: space-between;
-    min-width: 1146px;
+    width: 1150px;
   }
   .header-menu-catalog-submenu li:first-child {
     border-bottom: 1px solid gray;
@@ -801,7 +799,6 @@
     margin-right: 10px;
   }
   .ice-cream {
-    min-width: 1146px;
     padding: 0;
     display: flex;
     justify-content: space-between; 
@@ -809,7 +806,7 @@
   }
   .container-recipe-subscription {
     display: flex;
-    width: 1146px;
+    width: 1150px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 40px;
@@ -849,6 +846,7 @@
   .sales-hits {
     margin-top: 40px;
     margin-bottom: 40px;
+    width: 1150px;
   }
   .ice-cream-cards {
     display: flex;
@@ -915,12 +913,16 @@
   .carousel-text1,
   .carousel-text2,
   .carousel-text3 {
+    position: absolute;
     font-size: 60px;
     line-height: 60px;
     font-weight: bold;
     color: white;
-    margin-top: 250px;
-    margin-bottom: 50px;
+/*     margin-top: 250px;
+    margin-bottom: 50px; */
+    margin: 0;
+    padding: 0;
+    top: 400px;
     width: 700px;
     align-self: center;
   
@@ -928,10 +930,12 @@
   .carousel_wraper {
     display: flex;
     flex-direction: column;
+    width: 1150px;
   }
   .carousel_wraper .button {
     align-self: center;
     margin-bottom: 30px;
+    margin-top: 400px;
   }
   .carousel-changer {
     padding: 0;

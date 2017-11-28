@@ -112,34 +112,43 @@
         <section class="filters">
             <h3 class="visibility-hidden">Выберите мороженое</h3>
                 <form action="URL" method="get">
-                    <label for="filters-select">Сортировка
+                    <label for="filters-select">
                         <p>
-                            <select id="filters-select" name="filters-select" class="filters-select"> 
-                                <option selected>по популярности</option>
-                                <option>сначала недорогие</option>
-                                <option>сначала дорогие</option>
-                                <option>по жирности</option>
-                            </select>
+                          Сортировка 
                         </p>
+                        <select id="filters-select" name="filters-select" class="filters-select"> 
+                            <option selected>по популярности</option>
+                            <option>сначала недорогие</option>
+                            <option>сначала дорогие</option>
+                            <option>по жирности</option>
+                        </select>
                     </label>
-                    <label>Цена: 100 руб. - 500 руб.
+                    <label>
+                        <p>
+                          Цена: 100 руб. - 500 руб.
+                        </p>
                         <input type="range" name="filters-price">
                     </label>
-                    <fieldset >
-                        <legend>Жирность:</legend>
-                        <label>
-                            <input type="radio" name="fats" value="0">0%
-                        </label> 
-                        <label>
-                             <input type="radio" name="fats" value="10" checked>до 10%
-                        </label> 
-                        <label> 
-                            <input type="radio" name="fats" value="30">до 30%
-                        </label>
-                        <label> 
-                            <input type="radio" name="fats" value="30+">выше 30%
-                        </label> 
-                    </fieldset>
+                    <div>
+                        <p>
+                          Жирность: 
+                        </p>
+                        <fieldset >
+                            <legend class="visibility-hidden">Жирность:</legend>
+                            <label>
+                                <input type="radio" name="fats" value="0">0%
+                            </label> 
+                            <label>
+                                 <input type="radio" name="fats" value="10" checked>до 10%
+                            </label> 
+                            <label> 
+                                <input type="radio" name="fats" value="30">до 30%
+                            </label>
+                            <label> 
+                                <input type="radio" name="fats" value="30+">выше 30%
+                            </label> 
+                        </fieldset>
+                    </div>
                     <fieldset >
                             <legend>Наполнители:</legend>
                             <label>
