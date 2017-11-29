@@ -676,6 +676,7 @@
   }
   .filters form > * {
     margin-right: 10px;
+    margin-bottom: 10px;
   }
   .filters fieldset {
     border: 0;
@@ -684,6 +685,9 @@
   .filters-select {
     border-radius: 15px;
     background-color: rgba(255,255,255, 0.2);
+    background-image: url('../img/icon-down-dir.svg');
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
     border: 0px;
     color: white;
     -webkit-appearance: none;
@@ -734,6 +738,8 @@
   }
   .filters p {
     margin: 0;
+    margin-bottom: 10px;
+    padding-left: 15px;
   }
   .catalog-page-links a {
     font-size: 16px;
