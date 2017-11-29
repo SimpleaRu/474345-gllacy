@@ -112,10 +112,8 @@
         <section class="filters">
             <h3 class="visibility-hidden">Выберите мороженое</h3>
                 <form action="URL" method="get">
-                    <label for="filters-select">
-                        <p>
-                          Сортировка 
-                        </p>
+                    <label for="filters-select" class="label-select">
+                        <p>Сортировка </p>
                         <select id="filters-select" name="filters-select" class="filters-select"> 
                             <option selected>по популярности</option>
                             <option>сначала недорогие</option>
@@ -124,15 +122,11 @@
                         </select>
                     </label>
                     <label>
-                        <p>
-                          Цена: 100 руб. - 500 руб.
-                        </p>
+                        <p>Цена: 100 руб. - 500 руб.</p>
                         <input type="range" name="filters-price">
                     </label>
                     <div>
-                        <p>
-                          Жирность: 
-                        </p>
+                        <p> Жирность:</p>
                         <fieldset >
                             <legend class="visibility-hidden">Жирность:</legend>
                             <label>
@@ -149,8 +143,10 @@
                             </label> 
                         </fieldset>
                     </div>
-                    <fieldset >
-                            <legend>Наполнители:</legend>
+                    <div>
+                        <p>Наполнители:</p>
+                        <fieldset>
+                            <legend class="visibility-hidden">Наполнители:</legend>
                             <label>
                                 <input type="checkbox" name="chocolate" checked>шоколадные
                             </label>
@@ -166,7 +162,8 @@
                             <label>
                                 <input type="checkbox" name="jams">джемы      
                             </label>
-                    </fieldset>
+                        </fieldset>
+                    </div>
                     <button type="submit" class="filters-submit">Применить</button>
                 </form>
         </section>
