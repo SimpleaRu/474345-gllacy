@@ -140,18 +140,24 @@
                         <p class="filter-forn-small"> Жирность:</p>
                         <fieldset class="fatness">
                             <legend class="visibility-hidden">Жирность:</legend>
-                            <label>
-                                <input type="radio" name="fats" value="0">0%
-                            </label> 
-                            <label>
-                                 <input type="radio" name="fats" value="10" checked>до 10%
-                            </label> 
-                            <label> 
-                                <input type="radio" name="fats" value="30">до 30%
-                            </label>
-                            <label> 
-                                <input type="radio" name="fats" value="30+">выше 30%
-                            </label> 
+                            <ul class="fatness-list">
+                                <li>
+                                    <input type="radio" id="fatness0" name="fats" value="0" class="visibility-hidden" >
+                                    <label for="fatness0">0%</label>
+                                </li> 
+                                <li>
+                                     <input type="radio" id="fatness10" name="fats" value="10" checked class="visibility-hidden">
+                                     <label for="fatness10">до 10%</label>
+                                </li> 
+                                <li> 
+                                    <input type="radio" id="fatness30" name="fats" value="30" class="visibility-hidden">
+                                    <label for="fatness30">до 30%</label>
+                                </li>
+                                <li> 
+                                    <input type="radio" id="fatness30+" name="fats" value="30+" class="visibility-hidden">
+                                    <label for="fatness30+">выше 30%</label>
+                                </li> 
+                            </ul>
                         </fieldset>
                     </div>
                     <div>

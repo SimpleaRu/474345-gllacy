@@ -1051,12 +1051,43 @@
     top: 0;
     left: 32px;
 }
-  .fatness {
+  .fatness-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     display: flex;
     width: 417px;
     justify-content: space-between;
     box-sizing: border-box;
     margin: 0;
+  }
+  .fatness-list li {
+    padding-left: 33px;
+    position: relative;
+  }
+  .fatness-list label::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .fatness-list label::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, 0.8);
+    top: 6px;
+    left: 6px;
+    position: absolute;
+    visibility: hidden;
+  }
+  .fatness-list input:checked + label::after {
+    visibility: visible;
   }
   .fillers {
     display: flex;
