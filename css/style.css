@@ -9,7 +9,7 @@
     background: #849d8f;
     color: #ffffff;
     box-sizing: border-box;
-    padding: 25px;
+    padding: 27px;
   }
   .visibility-hidden {
     position: absolute;
@@ -160,8 +160,8 @@
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
-    text-decoration: underline;
     color: white;
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
   }
   .footer-links a:hover,
   .footer-HTML-Academy a:hover {
@@ -561,7 +561,7 @@
     margin: 0;
   }
   .header-phone-wraper {
-    width: 1150px;
+    width: 1146px;
     text-align: right;
   }
   .basket {
@@ -652,14 +652,14 @@
     font-weight: bold;
     line-height: 41px;
     color: white;
-    width: 1150px;
+    width: 1146px;
   }
   .filters {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
-    line-height: 16px;
+    line-height: 18px;
     color: white;
-    width: 1150px;
+    width: 1146px;
   }
   .filters form {
     display: flex;
@@ -721,7 +721,11 @@
     margin: 0;
     margin-bottom: 10px;
     padding-left: 15px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
   }
+
   .catalog-page-links a {
     font-size: 16px;
     font-weight: normal;
@@ -744,9 +748,7 @@
     padding: 7px;
   }
   .ice-cream li {
-   
     width: 267px;
-    
   }
   .about-facts p {
     margin-top: 5px;
@@ -754,13 +756,13 @@
   .special-offers  {
     display: flex;
     justify-content: space-between;
-    width: 1150px;
+    width: 1146px;
   }
   .header-menu-catalog-submenu li:first-child {
     border-bottom: 1px solid gray;
   }
 /* Сетки */
-  .main-navigation,
+/*   .main-navigation,
   .container-main-menu,
   .container-main-menu .header-menu,
   .enter-menu,
@@ -777,11 +779,11 @@
   .main-path {
     background-color: rgba(199, 216, 37, 0.2);
     outline: 1px solid rgba(12,21,16, 0.2);
-  }
+  } */
   .main-navigation {
     display: flex;
     justify-content: space-between;
-    width: 1150px;
+    width: 1146px;
   }
   .container-main-menu {
     display: flex;
@@ -807,11 +809,11 @@
     display: flex;
     justify-content: space-between; 
     flex-wrap: wrap;
-    width: 1150px;
+    width: 1146px;
   }
   .container-recipe-subscription {
     display: flex;
-    width: 1150px;
+    width: 1146px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 40px;
@@ -828,7 +830,7 @@
     left: 800px;
   }
   .footer {
-    width: 1150px;
+    width: 1146px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -851,7 +853,7 @@
   .sales-hits {
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 1150px;
+    width: 1146px;
   }
   .ice-cream-cards {
     display: flex;
@@ -933,7 +935,7 @@
   .carousel_wraper {
     display: flex;
     flex-direction: column;
-    width: 1150px;
+    width: 1146px;
   }
   .carousel_wraper .button {
     align-self: center;
@@ -962,13 +964,13 @@
     justify-content: flex-end;
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 1150px;
+    width: 1146px;
   }
   .main-path {
     padding: 0;
     margin: 0;
     display: flex;
-    width: 1150px;
+    width: 1146px;
   }
   .main-path li {
     padding-left: 5px;
@@ -1049,3 +1051,30 @@
     top: 0;
     left: 32px;
 }
+  .fatness {
+    display: flex;
+    width: 417px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .fillers {
+    display: flex;
+    justify-content: space-between;
+    width: 703px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .heart {
+    position: relative;
+  }
+  .heart::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/hart.svg');
+    background-repeat: no-repeat;
+    top: 0px;
+    left: -22px;
+  }

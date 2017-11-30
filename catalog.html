@@ -113,7 +113,7 @@
             <h3 class="visibility-hidden">Выберите мороженое</h3>
                 <form action="URL" method="get">
                     <label for="filters-select" class="label-select">
-                        <p>Сортировка: </p>
+                        <p class="filter-forn-small">Сортировка: </p>
                         <select id="filters-select" name="filters-select" class="filters-select"> 
                             <option selected>по популярности</option>
                             <option>сначала недорогие</option>
@@ -121,8 +121,8 @@
                             <option>по жирности</option>
                         </select>
                     </label>
-                    <label>
-                        <p>Цена: 100 руб. - 500 руб.</p>
+                    <label> 
+                        <p class="filter-forn-small">Цена: 100 руб. - 500 руб.</p>
                         <input type="range" name="filters-price" class="visibility-hidden">
                         <div class="price-line-wrap">
                             <div class="price-line">
@@ -137,8 +137,8 @@
                         </div>
                     </label>
                     <div>
-                        <p> Жирность:</p>
-                        <fieldset >
+                        <p class="filter-forn-small"> Жирность:</p>
+                        <fieldset class="fatness">
                             <legend class="visibility-hidden">Жирность:</legend>
                             <label>
                                 <input type="radio" name="fats" value="0">0%
@@ -155,8 +155,8 @@
                         </fieldset>
                     </div>
                     <div>
-                        <p>Наполнители:</p>
-                        <fieldset>
+                        <p class="filter-forn-small">Наполнители:</p>
+                        <fieldset class="fillers">
                             <legend class="visibility-hidden">Наполнители:</legend>
                             <label>
                                 <input type="checkbox" name="chocolate" checked>шоколадные
@@ -300,7 +300,7 @@
         </div>
         <div class="footer-links">
             <div>
-            <a href="#" class="bold">Для поставщиков</a>
+            <a href="#" class="bold heart">Для поставщиков</a>
             <a href="#">Наши документы</a>      
             </div>
             <div>
