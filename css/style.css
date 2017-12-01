@@ -692,6 +692,7 @@
   }
   .filters-select:hover {
     color: black;
+    background-image: url('../img/icon-down-dir-black.svg');
   }
 
   .filters-select option {
