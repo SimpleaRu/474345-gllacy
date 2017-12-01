@@ -136,7 +136,7 @@
                             </div>
                         </div>
                     </label>
-                    <div>
+                    <div class="fatness-wraper">
                         <p class="filter-forn-small"> Жирность:</p>
                         <fieldset class="fatness">
                             <legend class="visibility-hidden">Жирность:</legend>
@@ -164,21 +164,28 @@
                         <p class="filter-forn-small">Наполнители:</p>
                         <fieldset class="fillers">
                             <legend class="visibility-hidden">Наполнители:</legend>
-                            <label>
-                                <input type="checkbox" name="chocolate" checked>шоколадные
-                            </label>
-                            <label>
-                                <input type="checkbox" name="powdered-sugar" checked>сахарные присыпки       
-                            </label>
-                            <label>
-                                <input type="checkbox" name="fruits">фрукты    
-                            </label>
-                            <label>
-                                <input type="checkbox" name="syrups">сиропы     
-                            </label>
-                            <label>
-                                <input type="checkbox" name="jams">джемы      
-                            </label>
+                            <ul class="fillers-list">
+                                <li>
+                                    <input type="checkbox" name="chocolate" checked id="fillers-chocolate" class="visibility-hidden">
+                                    <label for="fillers-chocolate">шоколадные</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="powdered-sugar" checked id="fillers-sugar" class="visibility-hidden">
+                                    <label for="fillers-sugar">сахарные присыпки </label>     
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="fruits" id="fillers-fruit" class="visibility-hidden">
+                                    <label for="fillers-fruit">фрукты</label>    
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="syrups" id="fillers-syrups" class="visibility-hidden">
+                                    <label for="fillers-syrups">сиропы </label>    
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="jams" id="fillers-jams" class="visibility-hidden">
+                                    <label for="fillers-jams">джемы </label>   
+                                </li>
+                            </ul>
                         </fieldset>
                     </div>
                     <button type="submit" class="filters-submit">Применить</button>

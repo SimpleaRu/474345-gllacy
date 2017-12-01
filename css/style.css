@@ -666,12 +666,12 @@
     flex-wrap: wrap;
     width: 863px;
     align-items: flex-start;
+    justify-content: space-between;
     
   }
-  .filters form > * {
-    margin-right: 10px;
+   .filters form > * {
     margin-bottom: 10px;
-  }
+  } 
   .filters fieldset {
     border: 0;
     background-color: rgba(255,255,255, 0.2);
@@ -690,6 +690,10 @@
     appearance: none;
     padding: 5px 20px 5px 10px;
   }
+  .filters-select:hover {
+    color: black;
+  }
+
   .filters-select option {
     color: black;
   }
@@ -737,6 +741,11 @@
   .catalog-page-links a:hover {
     background-color: rgba(255,255,255, 0.2);
   }
+  .catalog-page-links a:active {
+    background-color: rgba(255,255,255, 1);
+    color: black;
+  }
+
   .catalog-page-links li:first-child a {
     background-color: rgba(255,255,255, 1);
     color: black;
@@ -1051,18 +1060,23 @@
     top: 0;
     left: 32px;
 }
-  .fatness-list {
+  .fatness-list,
+  .fillers-list {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
-    width: 417px;
     justify-content: space-between;
     box-sizing: border-box;
-    margin: 0;
+  }
+  .fatness-list {
+    width: 417px;
+  }
+  .fillers-list {
+    width: 703px;
   }
   .fatness-list label {
-    padding-left: 22px;
+    padding-left: 33px;
     position: relative;
   }
   .fatness-list label::before {
@@ -1095,13 +1109,19 @@
   .fatness-list input:checked + label::after {
     visibility: visible;
   }
-  .fillers {
-    display: flex;
-    justify-content: space-between;
+  .filters  .fatness-wraper {
+    margin-right: 0;
+  }
+/*   .fillers {
     width: 703px;
+  }
+  .fillers-list {
     box-sizing: border-box;
     margin: 0;
-  }
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  } */
   .heart {
     position: relative;
   }
@@ -1114,4 +1134,41 @@
     background-repeat: no-repeat;
     top: 0px;
     left: -22px;
+  }
+  .fillers-list label {
+    padding-left: 33px;
+    position: relative;
+  }
+  .fillers-list label::before {
+    content: "";
+    width: 23px;
+    height: 23px;
+    border: 2px solid  rgba(255,255,255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    visibility: visible;
+  }
+  .fillers-list label:hover::before {
+    border: 2px solid  rgba(255,255,255, 1);
+  }
+  .fillers-list label::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../img/checkbox-on.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    visibility: hidden;
+  }
+  .fillers-list input:checked + label::after {
+    visibility: visible;
+  }
+  .fillers-list input:checked + label::before {
+    visibility: hidden;
   }
