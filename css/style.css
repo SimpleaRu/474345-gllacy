@@ -963,6 +963,27 @@
   .carousel-changer li {
     padding-right: 10px;
   }
+  .carousel-changer label {
+    padding-left: 30px;
+    position: relative;
+  }
+  .carousel-changer label::before {
+    content: "";
+     width: 22px;
+     height: 22px;
+     border-radius: 50%;
+     box-sizing: border-box;
+     border: 2px solid white;
+     top: 0;
+     left: 0;
+     position: absolute;
+  }
+  .carousel-changer label:hover::before {
+    background-color: rgba(255,255,255, 0.4);
+  }
+  .carousel-changer input:checked + label::before {
+    background-color: rgba(255,255,255, 1);
+  }
   .catalog-ice-cream {
     margin-top: 40px;
     margin-bottom: 40px;
