@@ -15,7 +15,9 @@
           <ul class="header-menu">
             <li class="header-menu-submenu"><a href="#" class="header-menu-catalog">Каталог</a>
               <ul class="header-menu-catalog-submenu">
-                <li><a href="#" class="bold">Новинки</a> </li>
+                <li><a href="#" class="bold">Новинки</a> 
+                  <div class="submenu-gasket"></div>
+                </li>
                 <li><a href="catalog.html">Сливочное</a> </li>
                 <li><a href="#">Щербеты</a> </li>
                 <li><a href="#">Фруктовый лед</a> </li>
@@ -29,31 +31,34 @@
         <div class="container-user-menu">
           <ul class="enter-menu">
             <li class="enter-search"><a href="#"> <span class="visibility-hidden">Поиск</span></a>
-              <div class="search-form">
-                <form action="URL" method="get">
-                  <label for="search-string" class="visibility-hidden">Поиск по сайту</label>
-                  <input type="text" name="search-string" id="search-string" placeholder="Что ищем?">
-                </form>
-              </div>
+              <div class="search-form-wraper">
+                <div class="search-form">
+                  <form action="URL" method="get">
+                    <label for="search-string" class="visibility-hidden">Поиск по сайту</label>
+                    <input type="text" name="search-string" id="search-string" placeholder="Что ищем?">
+                  </form>
+                </div>
+              </div >
             </li>
             <li class="enter-button"> <a href="#">Вход</a> 
+              <div class="enter-form-gasket"></div>
               <div class="enter-form">
                 <form action="URL" method="get" name="enter-form">
                 <p>
-                    <label for="enter-form-email" class="visibility-hidden">Электронная почта</label>
-                    <input type="email" placeholder="Электронная почта" id="enter-form-email" name="enter-form-email">
+                  <label for="enter-form-email" class="visibility-hidden">Электронная почта</label>
+                  <input type="email" placeholder="Электронная почта" id="enter-form-email" name="enter-form-email">
                 </p>
                   <p>
                     <label for="enter-form-password" class="visibility-hidden">Пароль</label>
-                    <input type="text" placeholder="Пароль" id="enter-form-password" name="enter-form-password">
+                    <input type="password" placeholder="Пароль" id="enter-form-password" name="enter-form-password">
                   </p>
                   <div class="enter-form-button-links">
                     <p>
                       <button type="submit" class="button">Войти</button>
                     </p>
                     <p class="enter-form-links">
-                        <a href="#">Забыли пароль?</a>
-                        <a href="#">Новая регистрация</a>
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
                     </p>
                   </div>
                 </form>
@@ -223,7 +228,9 @@
            <p>Для заказов по телефону:</p>
            <p class="contacts-strong">8 812 450-25-25</p>
            <p>(с 10 до 20 ежедневно)</p>
-            <button type="button" class="button" id="feed-back-show">Форма обратной связи</button>
+           <p>
+             <button type="button" class="button" id="feed-back-show">Форма обратной связи</button>
+           </p>
         </div>
       </div>
       <section class="feed-back"> 
@@ -260,7 +267,7 @@
       </div>
       <div class="footer-links">
         <div>
-          <a href="#" class="bold">Для поставщиков</a>
+          <a href="#" class="bold heart">Для поставщиков</a>
           <a href="#">Наши документы</a>      
         </div>
          <div>

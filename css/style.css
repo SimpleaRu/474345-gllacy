@@ -68,9 +68,11 @@
    visibility: hidden;
    background: white;
    border-radius: 10px;
+   width: 143px;
    margin: 0;
    padding: 0;
    position: absolute;
+   top: 37px;
  }
  .header-menu-catalog-submenu li {
    padding: 0;
@@ -96,18 +98,20 @@
    color: black;
    text-decoration: none;
   }
-  .header-menu-submenu:hover .header-menu-catalog-submenu {
+  .header-menu-submenu:hover  .header-menu-catalog-submenu {
    visibility: visible;
    margin: 0;
+  }
+  .header-menu-submenu:hover .submenu-gasket {
+    display: block;
   }
   .enter-form a:hover {
     color:#e84d37;
   }
-  .enter-form-button-links p {
-    display:inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-  }
+ /*  .enter-form-button-links p {
+  
+   
+  } */
   .enter-button > a::before {
     content:"";
     float: left; 
@@ -123,7 +127,7 @@
     color: black;
   }
   .enter-form-links  {
-    width: 150px;
+    width: 130px;
     margin: 0;
   }
   .enter-form-links a {
@@ -144,6 +148,10 @@
   }
   .enter-search a {
     padding: 7px;
+  }
+  .enter-search:hover  .search-form {
+    /* visibility: visible; */
+    display: flex
   }
   .enter-chart > a::before {
     content:"";
@@ -383,30 +391,59 @@
     line-height: 24px;
     font-weight: bold;
     color: #323232;
+    margin: 0;
   }
-  .map-contacts button {
-    position: absolute;
-    bottom: 25px;
+  .map-contacts p:nth-child(1) {
+    margin-bottom: 7px;
   }
+  .map-contacts p:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .map-contacts p:nth-child(3) {
+    margin-bottom: 10px;
+  }
+  .map-contacts p:nth-child(4) {
+    margin-bottom: 5px;
+  }
+  .map-contacts p:nth-child(5) {
+    margin-bottom: 20px;
+  }
+  .map-contacts p:nth-child(6) {
+    text-align: center;
+  }
+
   .feed-back {
     width: 478px;
     height: 443px;
     background-color: white;
     border-radius: 15px;
     box-sizing: border-box;
-    padding: 15px;
-    margin-top: 10px;
-    display: none;
+    padding: 20px 25px 25px 25px;
+    position: fixed;
+    top: 150px;
+    left: 388px;
+    z-index: 10;
+    visibility: hidden;
+  }
+  .feed-back p {
+    margin: 0;
+  }
+  .feed-back p:nth-child(1),
+  .feed-back p:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .feed-back p:nth-child(3) {
+    margin-bottom: 25px;
+  }
+  .feed-back p:nth-child(4) {
+    text-align: right;
   }
   .feed-back h3 {
     font-size: 24px;
     line-height: 28px;
     font-weight: normal;
     color: #323232;
-    display: inline-block;
-    float: left;
     margin-top: 0;
-    vertical-align: middle;
   }
   
   .feed-back .close-button {
@@ -414,32 +451,53 @@
     width: 18px;
     height: 18px;
     border: none;
-    display: inline-block;
-    float: right;
-    vertical-align: middle;
+    position: absolute;
+    top: 15px;
+    left: 443px;
+    cursor: pointer;
   }
   .feed-back input {
     width: 267px;
     height: 44px;
     border-radius: 10px;
-    border: 1px solid gray;
+    box-sizing: border-box;
+    border: 1px solid #c7c6c5;
   }
   .feed-back textarea {
     width: 428px;
     height: 155px;
     border-radius: 10px;
-    border: 1px solid gray;
+    border: 1px solid #c7c6c5;
+    resize: none;
+    box-sizing: border-box;
   }
   .enter-form {
-    width: 313px;
-    height: 252px;
+    width: 278px;
+    height: 214px;
     background-color: #f8f7f4;
     border-radius: 15px;
     box-sizing: border-box;
     padding: 15px;
-    margin-top: 10px;
+    left: -191px;
+    top: 38px;
     position: absolute;
     visibility: hidden;
+  }
+  .enter-form-gasket {
+    position: absolute;
+    top: 34px;
+    width: 100%;
+    height: 4px;
+    visibility: hidden;
+  }
+  .enter-form-button-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .enter-form form {
+    display: flex;
+    flex-direction: column;
   }
   .enter-form a {
     font-size: 13px;
@@ -451,26 +509,43 @@
     vertical-align: middle;
   }
   .enter-form  button {
-    float: left;
+    margin-right: 20px;
   }
   .enter-form input {
     width: 241px;
     height: 44px;
     border-radius: 10px;
-    border: 1px solid gray;
+    border: 1px solid #c7c6c5;
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
     color: #323232;
   }
+  .enter-form p {
+    margin: 0;
+    margin-bottom: 20px;
+  }
   .search-form {
-    width: 341px;
-    height: 84px;
+    width: 342px;
+    height: 85px;
     border-radius: 10px;
     background-color: #f8f7f4;
     text-align: center;
     position: absolute;
-    visibility: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -307px;
+    top: 4px;
+   /*  visibility: hidden; */
+   display: none;
+  }
+  .search-form-wraper {
+    position: absolute;
+    width: 35px;
+    height: 5px;
   }
   .search-form input {
     width: 311px;
@@ -481,21 +556,33 @@
     line-height: 24px;
     font-weight: normal;
     color: #323232;
-    margin: auto;
+    padding-left: 15px;
+    box-sizing: border-box;
+ 
   }
   .search-form input:hover,
   .enter-form input:hover,
   .subscription input:hover,
   .feed-back input:hover,
   .feed-back textarea:hover {
-    border: 1px solid #c7c6c5;
+    /* border: 1px solid #c7c6c5; */
+    box-shadow: 0 0 0 2px #c7c6c5;
   }
   .search-form input:focus,
   .enter-form input:focus,
   .subscription input:focus,
   .feed-back input:focus,
   .feed-back textarea:focus  {
-    border: 1px solid #8fbdec;
+   /*  border: 1px solid #8fbdec; */
+    box-shadow: 0 0 0 2px #8fbdec;
+  }
+   .search-form input,
+  .enter-form input,
+  .subscription input,
+  .feed-back input,
+  .feed-back textarea{
+    padding-left: 15px;
+    box-sizing: border-box;
   }
   .footer-social a {
     display: inline-block;
@@ -565,8 +652,8 @@
     text-align: right;
   }
   .basket {
+    width: 540px;
     background: #f8f7f4;
-    display:inline-block;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 15px;
@@ -575,7 +662,10 @@
     line-height: 16px;
     color: black;
     position: absolute;
-    display: none;
+    top: 35px;
+    left: -425px;
+
+    /* display: none; */
   }
   .basket table {
     border-bottom: 1px solid #c7c6c5;
@@ -619,6 +709,9 @@
   }
   .basket .button {
     float: right;
+  }
+  .enter-chart-full {
+    position: relative;
   }
   .enter-chart-full > a {
     background-color: rgba(255,255,255, 1);
@@ -809,6 +902,18 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+  }
+  .enter-button {
+    position: relative;
+  }
+  .enter-button:hover .enter-form {
+    visibility: visible;
+  }
+  .enter-button:hover .enter-form-gasket {
+    visibility: visible;
+  }
+  .enter-menu li:first-child {
+    position: relative;
   }
   .enter-menu > li,
   .header-menu > li {
@@ -1193,4 +1298,14 @@
   }
   .fillers-list input:checked + label::before {
     visibility: hidden;
+  }
+  .submenu-gasket {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    display: none;
+  }
+  .header-menu-submenu {
+    position: relative;
   }
