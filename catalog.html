@@ -15,53 +15,60 @@
                 <img src="img/gllacy-logo.svg" class="index-logo" height="64" width="154" alt="Gllacy">
             </a>
             <ul class="header-menu">
-                <li class="header-menu-submenu"><a href="#" class="header-menu-catalog-selected">Каталог</a>
-                  <ul class="header-menu-catalog-submenu">
-                    <li><a href="#" class="bold">Новинки</a> </li>
-                    <li class="menu-catalog-selectable"><a href="catalog.html">Сливочное</a> </li>
-                    <li><a href="#">Щербеты</a> </li>
-                    <li><a href="#">Фруктовый лед</a> </li>
-                    <li><a href="#">Мелорин</a> </li>
-                  </ul>
-                </li>
+                    <li class="header-menu-submenu"><a href="#" class="header-menu-catalog">Каталог</a>
+                        <ul class="header-menu-catalog-submenu">
+                          <li><a href="#" class="bold">Новинки</a> 
+                            <div class="submenu-gasket"></div>
+                          </li>
+                          <li class="menu-catalog-selectable"><a href="catalog.html">Сливочное</a> </li>
+                          <li><a href="#">Щербеты</a> </li>
+                          <li><a href="#">Фруктовый лед</a> </li>
+                          <li><a href="#">Мелорин</a> </li>
+                        </ul>
+                      </li>
                 <li><a href="#" class="header-menu-delivery">Доставка и оплата</a></li>
                 <li><a href="#" class="header-menu-company">О конмпании</a></li>
               </ul>
             </div>
             <div class="container-user-menu"></div>
               <ul class="enter-menu">
-                <li class="enter-search"><a href="#"> <span class="visibility-hidden">Поиск</span></a>
-                    <div class="search-form">
-                        <form action="URL" method="get">
-                          <label for="search-string" class="visibility-hidden">Поиск по сайту</label>
-                          <input type="text" name="search-string" id="search-string" placeholder="Что ищем?">
-                        </form>
-                    </div>
-                </li>
-                <li class="enter-button"> <a href="#">Вход</a>
-                    <div class="enter-form">
-                        <form action="URL" method="get" name="enter-form">
-                         <p>
+                    <li class="enter-search"><a href="#"> <span class="visibility-hidden">Поиск</span></a>
+                        <div class="search-form-wraper">
+                          <div class="search-form">
+                            <form action="URL" method="get">
+                              <label for="search-string" class="visibility-hidden">Поиск по сайту</label>
+                              <input type="text" name="search-string" id="search-string" placeholder="Что ищем?">
+                            </form>
+                          </div>
+                        </div >
+                      </li>
+                      <li class="enter-button"> <a href="#">Вход</a> 
+                        <div class="enter-form-gasket"></div>
+                        <div class="enter-form">
+                          <form action="URL" method="get" name="enter-form">
+                          <p>
                             <label for="enter-form-email" class="visibility-hidden">Электронная почта</label>
                             <input type="email" placeholder="Электронная почта" id="enter-form-email" name="enter-form-email">
-                         </p>
-                          <p>
-                            <label for="enter-form-password" class="visibility-hidden">Пароль</label>
-                            <input type="text" placeholder="Пароль" id="enter-form-password" name="enter-form-password">
                           </p>
-                          <div class="enter-form-button-links">
                             <p>
-                              <button type="submit" class="button">Войти</button>
+                              <label for="enter-form-password" class="visibility-hidden">Пароль</label>
+                              <input type="password" placeholder="Пароль" id="enter-form-password" name="enter-form-password">
                             </p>
-                            <p class="enter-form-links">
+                            <div class="enter-form-button-links">
+                              <p>
+                                <button type="submit" class="button">Войти</button>
+                              </p>
+                              <p class="enter-form-links">
                                 <a href="#">Забыли пароль?</a>
                                 <a href="#">Новая регистрация</a>
-                            </p>
-                          </div>
-                        </form>
-                      </div>
-                </li>
-                <li class="enter-chart-full"><a href="#">2 товара</a>
+                              </p>
+                            </div>
+                          </form>
+                        </div>
+                      </li>
+                <li class="enter-chart-full">
+                    <a href="#">2 товара</a>
+                    <div class="basket-gasket"></div>
                     <div class="basket">
                         <table>
                             <tr>
@@ -88,7 +95,9 @@
                             </tr>
                         </table>
                         <p class="sum-price">Итого:750 руб.</p>
-                        <a href="#" class="button"> Оформить заказ</a>
+                        <p class="basket-button">
+                            <a href="#" class="button"> Оформить заказ</a>
+                        </p>
                     </div>
                 </li>
             </ul>
@@ -300,6 +309,7 @@
             <li><a href="#">5</a></li>
             <li><a href="#">></a></li>
         </ul>
+        <hr class="underline">
     </main>
 
     <footer class="footer">
