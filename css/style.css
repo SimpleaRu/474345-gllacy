@@ -9,7 +9,7 @@
     background: #849d8f;
     color: #ffffff;
     box-sizing: border-box;
-    padding: 27px;
+    padding: 10px 27px 27px 27px;
   }
   .visibility-hidden {
     position: absolute;
@@ -32,10 +32,9 @@
     color: #ffffff;
     display: inline-block;
     vertical-align: middle;
+    text-decoration: underline rgba(255,255,255, 0.3);
   }
- /*  .main-navigation a:focus {
-    box-shadow: 0 0 0 1px rgb(115, 115, 214);
-  } */
+
   .header-menu-catalog,
   .header-menu-delivery,
   .header-menu-company {
@@ -120,8 +119,12 @@
     float: left; 
     width: 21px;
     height: 19px;
-    padding-right: 5px;
     background: url('../img/enter.svg') 50% 50% no-repeat;
+    margin-right: 5px;
+  }
+  .enter-chart > a {
+    padding-right: 35px;
+    padding-left: 12px;
   }
   .enter-button > a:hover,
   .enter-search > a:hover,
@@ -135,6 +138,9 @@
   }
   .enter-form-links a {
     padding: 0;
+  }
+  .enter-button > a {
+    padding-right: 20px;
   }
   .enter-button > a:hover::before {
     background: url('../img/enter-active.svg') 50% 50% no-repeat;
@@ -150,7 +156,7 @@
     background: url('../img/search-loupe-black.svg') 50% 50% no-repeat;
   }
   .enter-search a {
-    padding: 7px;
+    padding: 5px;
   }
   .enter-search:hover  .search-form {
     /* visibility: visible; */
@@ -163,6 +169,7 @@
     height: 20px;
     padding-right: 5px;
     background: url('../img/chart_empty.svg') 50% 50% no-repeat;
+    margin-right: 5px;
   }
   .enter-chart > a:hover::before {
     background: url('../img/chart_empty-black.svg') 50% 50% no-repeat;
@@ -237,6 +244,8 @@
     box-sizing: border-box;
     padding: 19px;
     border-radius: 20px;
+    padding-top: 16px;
+    padding-right: 21px;
   }
   .offer-chocolate {
     width: 560px;
@@ -245,6 +254,8 @@
     background-image: url('../img/offer-chocolate.jpg');
     box-sizing: border-box;
     padding: 19px;
+    padding-top: 16px;
+    padding-right: 21px;
     border-radius: 20px;
   }
   .offer-raspberries p,
@@ -253,6 +264,8 @@
     line-height: 22px;
     font-weight: bold;
     color: white;
+    margin: 0;
+    margin-bottom: 55px;
   }
   .offer-raspberries h3,
   .offer-chocolate h3 {
@@ -261,6 +274,16 @@
     font-weight: bold;
     color: white;
     margin: 0;
+    margin-bottom: 15px;
+  }
+  .offer-chocolate .button-contener,
+  .offer-raspberries .button-contener {
+    text-align: right;
+    margin: 0;
+  }
+  .offer-chocolate .button,
+  .offer-raspberries .button {
+    padding: 11px 23px;
   }
 
   .recipe-sherbet {
@@ -275,7 +298,7 @@
     width: 560px;
     height: 220px;
     background-image: url('../img/strawberry_background.jpg');
-    background-position: 18% 40%;
+    background-position: 17% 40%;
     border-radius: 20px;
   }
   .recipe-head {
@@ -283,7 +306,7 @@
     line-height: 22px;
     font-weight: normal;
     color: black;
-    padding: 27px 0 5px 20px;
+    padding: 20px 0 5px 20px;
     margin: 0 0 0 0;
   }
   .recipe-sherbet p {
@@ -306,13 +329,17 @@
     box-sizing: border-box;
     padding: 19px;
     border-radius: 20px;
+    margin-top: -8px;
+    padding-top: 25px;
   }
   .about-gllacy ul {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    justify-content: space-between;
   }
+
   .about-gllacy li {
     padding-left: 60px;
     position: relative;
@@ -330,7 +357,7 @@
     line-height: 30px;
     font-weight: normal;
     color: #323232;
-    margin: 0 0 10px 0;
+    margin: 0 0 11px 0;
   }
   .about-gllacy p {
     margin: 0 0 10px 0;
@@ -365,20 +392,34 @@
     height: 220px;
     border-radius: 15px;
     box-sizing: border-box;
-    padding: 19px;
+    padding: 25px;
   }
   .subscription p {
     font-size: 16px;
     line-height: 22px;
     font-weight: normal;
     color: #5a5a5a;
+    margin: 5px 0 38px 0;
   }
   .subscription input {
     width: 367px;
     height: 42px;
     border-radius: 10px;
     border: 1px solid #d3d3d2;
+    margin-right: 10px;
   }
+  .subscription button {
+    padding: 9px 15px;
+  }
+  .map {
+    width: 1146px;
+    height: 430px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
   .map-contacts {
       width: 302px;
       height: 305px;
@@ -386,7 +427,9 @@
       border-radius: 15px;
       box-sizing: border-box;
       padding: 25px;
-      position: relative;
+      position: absolute;
+      top: 63px;
+      left: 844px;
   }
   .map-contacts p {
     font-size: 14px;
@@ -403,24 +446,31 @@
     margin: 0;
   }
   .map-contacts p:nth-child(1) {
-    margin-bottom: 7px;
+    margin-bottom: 2px;
+    padding-top: 2px;
   }
   .map-contacts p:nth-child(2) {
     margin-bottom: 20px;
   }
   .map-contacts p:nth-child(3) {
-    margin-bottom: 10px;
+    margin-bottom: 3px;
   }
   .map-contacts p:nth-child(4) {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
   .map-contacts p:nth-child(5) {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   .map-contacts p:nth-child(6) {
     text-align: center;
   }
-
+  .map-contacts button {
+    padding: 10px 22px;
+  }
+  .map iframe {
+    position: absolute;
+    left: -27px;
+  }
   .feed-back {
     width: 478px;
     height: 443px;
@@ -652,6 +702,7 @@
     font-weight: bold;
     color: white;
     margin: 0;
+    margin-bottom: 3px;
   }
   .contacts-strong {
     font-size: 22px;
@@ -928,16 +979,23 @@
     display: flex;
     justify-content: space-between;
   }
+  .container-main-menu img {
+    margin-right: 16px;
+  }
   .container-main-menu .header-menu {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0;
     flex-wrap: wrap;
+    width: 363px;
+    margin-top: 10px;
   }
   .enter-menu {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    width: 260px;
+    margin-top: 12px;
   }
   .enter-button {
     position: relative;
@@ -951,10 +1009,10 @@
   .enter-menu li:first-child {
     position: relative;
   }
-  .enter-menu > li,
+/*   .enter-menu > li,
   .header-menu > li {
     margin-right: 10px;
-  }
+  } */
   .ice-cream {
     margin: 0;
     padding: 0;
@@ -970,20 +1028,9 @@
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
-  .map {
-    width: 1146px;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 40px;
-  }
-  .map-contacts {
-    position: absolute;
-    top: 80px;
-    left: 800px;
-  }
+
   .footer {
     width: 1146px;
     display: flex;
@@ -1015,7 +1062,6 @@
     flex-direction: column;
     position: relative;
     z-index: 1;
-    margin-bottom: 10px; 
   }
   .ice-cream-cards:hover .button  {
     visibility: visible;
@@ -1032,7 +1078,7 @@
   }
   .ice-cream-price {
     position: absolute;
-    top: 200px;
+    top: 210px;
     left: 0;
   }
   .sales-hits .ice-cream-cards::before {
@@ -1082,10 +1128,11 @@
     color: white;
     margin: 0;
     padding: 0;
-    top: 400px;
+    top: 392px;
+    left: 250px;
     width: 700px;
     align-self: center;
-  
+    text-align: center;
   }
   .carousel_wraper {
     display: flex;
@@ -1094,8 +1141,8 @@
   }
   .carousel_wraper .button {
     align-self: center;
-    margin-bottom: 30px;
-    margin-top: 400px;
+    margin-bottom: 41px;
+    margin-top: 426px;
   }
   .carousel-changer {
     padding: 0;
@@ -1103,13 +1150,11 @@
     list-style: none;
     display: flex;
     position: absolute;
-    top: 580px;
+    top: 561px;
   }
-  .carousel-changer li {
-    padding-right: 10px;
-  }
+
   .carousel-changer label {
-    padding-left: 30px;
+    padding-left: 28px;
     position: relative;
   }
   .carousel-changer label::before {
@@ -1165,8 +1210,11 @@
     line-height: 44px;
     color: white;
     border-radius: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    letter-spacing: -1px;
   }
   .menu-catalog-selectable {
     background-color: #d07058;
