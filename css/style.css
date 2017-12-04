@@ -716,9 +716,11 @@
   }
   .header-phone-wraper {
     position: absolute;
-    left: 1006px;
+    left: 973px;
+    top: 72px;
     text-align: right;
     z-index: -1;
+    width: 200px;
   }
   .basket {
     width: 540px;
@@ -842,7 +844,7 @@
     width: 1146px;
     margin: 0;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 29px;
   }
   .filters form {
     display: flex;
@@ -853,12 +855,13 @@
     
   }
    .filters form > * {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   } 
   .filters fieldset {
     border: 0;
     background-color: rgba(255,255,255, 0.2);
     border-radius: 15px;
+    margin-left: 0;
   }
   .filters-select {
     border-radius: 15px;
@@ -908,7 +911,7 @@
   }
   .filters p {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     padding-left: 15px;
     font-size: 14px;
     font-weight: normal;
@@ -922,6 +925,7 @@
     color: white;
     padding: 5px 10px 5px 10px;
     border-radius: 15px;
+    margin-right: -1px;
   }
   .catalog-page-links a:hover {
     background-color: rgba(255,255,255, 0.2);
@@ -1094,8 +1098,8 @@
   }
   .ice-cream .ice-cream-description {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 13px;
+    margin-bottom: 0px;
   }
   .ice-cream-price {
     position: absolute;
@@ -1207,6 +1211,7 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 30px;
+    padding-top: 5px;
     width: 1146px; 
   }
   .main-path {
@@ -1387,8 +1392,8 @@
   }
   .fillers-list label::before {
     content: "";
-    width: 23px;
-    height: 23px;
+    width: 22px;
+    height: 22px;
     border: 2px solid  rgba(255,255,255, 0.8);
     position: absolute;
     top: 0;
@@ -1432,7 +1437,7 @@
     height:1px;
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 41px;
     color: rgba(255,255,255, 0.3);;
     background-color: rgba(255,255,255, 0.3);
     width: 1146px;
