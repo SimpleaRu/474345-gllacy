@@ -40,7 +40,7 @@
   .header-menu-company {
     border-radius: 15px;
     text-align: center;
-    padding: 7px;
+    padding: 7px 12px;
   }
   .header-menu-catalog:hover,
   .header-menu-delivery:hover,
@@ -75,6 +75,7 @@
    padding: 0;
    position: absolute;
    top: 37px;
+   left: -10px;
  }
  .header-menu-catalog-submenu li {
    padding: 0;
@@ -82,7 +83,7 @@
  }
  .header-menu-catalog-submenu a {
    display: block;
-   padding: 5px 10px 5px 10px;
+   padding: 9px 10px 9px 20px;
  }
 
  .header-menu-catalog-submenu li:hover {
@@ -156,7 +157,7 @@
     background: url('../img/search-loupe-black.svg') 50% 50% no-repeat;
   }
   .enter-search a {
-    padding: 5px;
+    padding: 6px;
   }
   .enter-search:hover  .search-form {
     /* visibility: visible; */
@@ -299,7 +300,7 @@
     height: 220px;
     background-image: url('../img/strawberry_background.jpg');
     background-position: 17% 40%;
-    border-radius: 20px;
+    border-radius: 15px;
   }
   .recipe-head {
     font-size: 16px;
@@ -329,8 +330,8 @@
     box-sizing: border-box;
     padding: 19px;
     border-radius: 20px;
-    margin-top: -8px;
-    padding-top: 25px;
+   
+    padding-top: 23px;
   }
   .about-gllacy ul {
     display: flex;
@@ -393,6 +394,7 @@
     border-radius: 15px;
     box-sizing: border-box;
     padding: 25px;
+    padding-top: 26px;
   }
   .subscription p {
     font-size: 16px;
@@ -417,7 +419,7 @@
     position: relative;
     margin: 0;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 
   .map-contacts {
@@ -539,10 +541,10 @@
     width: 278px;
     height: 214px;
     background-color: #f8f7f4;
-    border-radius: 15px;
+    border-radius: 10px;
     box-sizing: border-box;
-    padding: 15px;
-    left: -191px;
+    padding: 18px 15px 15px 20px;
+    left: -184px;
     top: 38px;
     position: absolute;
     visibility: hidden;
@@ -574,6 +576,7 @@
   }
   .enter-form  button {
     margin-right: 20px;
+    padding: 11px 22px;
   }
   .enter-form input {
     width: 241px;
@@ -589,6 +592,11 @@
     margin: 0;
     margin-bottom: 20px;
   }
+  .enter-form-links p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: -5px;
+  }
   .search-form {
     width: 342px;
     height: 85px;
@@ -601,7 +609,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: -307px;
+    left: -312px;
     top: 4px;
    /*  visibility: hidden; */
    display: none;
@@ -678,6 +686,7 @@
   }
   .footer-social {
     margin-right: 11px;
+    padding-top: 10px;
   }
   .ice-cream-description {
     font-size: 16px;
@@ -991,15 +1000,16 @@
     justify-content: space-between;
   }
   .container-main-menu img {
-    margin-right: 16px;
+    margin-right: 13px;
   }
   .container-main-menu .header-menu {
     display: flex;
     justify-content: space-between;
     padding: 0;
     flex-wrap: wrap;
-    width: 363px;
+    width: 371px;
     margin-top: 10px;
+    align-items: center;
   }
   .enter-menu {
     display: flex;
@@ -1047,7 +1057,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -20px;
   }
    .footer-social ul {
     display: flex;
@@ -1058,7 +1067,7 @@
     width: 184px;
   } 
   .footer-links {
-    width: 306px;
+    width: 303px;
     display: flex;
     justify-content: space-between;
   } 
@@ -1166,7 +1175,7 @@
   }
   .carousel_wraper .button {
     align-self: center;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
     margin-top: 470px;
   }
   .carousel-changer {
@@ -1383,7 +1392,7 @@
     height: 15px;
     background-image: url('../img/hart.svg');
     background-repeat: no-repeat;
-    top: 0px;
+    top: 3px;
     left: -22px;
   }
   .fillers-list label {
@@ -1437,7 +1446,7 @@
     height:1px;
     margin: 0;
     padding: 0;
-    margin-bottom: 41px;
+    margin-bottom: 20px;
     color: rgba(255,255,255, 0.3);;
     background-color: rgba(255,255,255, 0.3);
     width: 1146px;
