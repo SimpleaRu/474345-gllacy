@@ -479,10 +479,10 @@
     background-color: white;
     border-radius: 15px;
     box-sizing: border-box;
-    padding: 20px 25px 25px 25px;
+    padding: 17px 25px 25px 25px;
     position: fixed;
-    top: 150px;
-    left: 388px;
+    top: 338px;
+    left: 362px;
     z-index: 0;
     visibility: hidden;
   }
@@ -499,7 +499,7 @@
     margin-bottom: 20px;
   }
   .feed-back p:nth-child(3) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   .feed-back p:nth-child(4) {
     text-align: right;
@@ -510,6 +510,7 @@
     font-weight: normal;
     color: #323232;
     margin-top: 0;
+    margin-bottom: 18px;
   }
   
   .feed-back .feed-close-button {
@@ -536,6 +537,9 @@
     border: 1px solid #c7c6c5;
     resize: none;
     box-sizing: border-box;
+  }
+  .feed-back .button {
+    padding: 8px 20px 8px 20px;
   }
   .enter-form {
     width: 278px;
@@ -744,6 +748,7 @@
     position: absolute;
     top: 39px;
     left: -425px;
+    padding-top: 5px;
     visibility: hidden;
   }
   .basket-gasket {
@@ -755,7 +760,9 @@
   }
   .basket table {
     border-bottom: 1px solid #c7c6c5;
+    padding-bottom: 13px;
     margin-bottom: 15px;
+    width: 100%;
   }
   .basket .close-button  {
     background: url('../img/Х-big.svg') 50% 50% no-repeat;
@@ -763,7 +770,6 @@
     height: 11px;
     border: none;
     display: inline-block;
-    float: right;
     padding: 0;
     vertical-align: middle;
   }
@@ -784,8 +790,22 @@
     height: 33px;
     background: url('../img/icy_strawberry_small.png') 50% 50% no-repeat;
   }
+  
+  .first-line td:nth-child(3),
+  .second-line td:nth-child(3) {
+    width: 240px;
+    
+  }
+  .first-line td:nth-child(2),
+  .second-line td:nth-child(2) {
+    width: 48px;
+    
+  }
+  .second-line td:nth-child(3) {
+    vertical-align: bottom;
+  }
   .basket td {
-    padding: 10px 10px 10px 5px;
+    height: 50px; 
   }
   .basket .sum-price {
     font-size: 15px;
@@ -800,7 +820,14 @@
   .basket-button {
     text-align: right;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
+  }
+  .basket-button a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
   }
   .enter-chart-full {
     position: relative;
@@ -1057,6 +1084,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -2px;
   }
    .footer-social ul {
     display: flex;
@@ -1103,12 +1131,15 @@
   .ice-cream .button {
     align-self: center;
     visibility: hidden;
-  
+    position: absolute;
+    top: 334px;
+    z-index: 11;
+    padding: 10px 15px 9px 15px;
   }
   .ice-cream .ice-cream-description {
     text-align: center;
     margin-top: 13px;
-    margin-bottom: 0px;
+    margin-bottom: 39px;
   }
   .ice-cream-price {
     position: absolute;
@@ -1139,6 +1170,9 @@
   }
   .ice-cream-cards:hover::after {
     visibility: visible;
+  }
+  .ice-cream-cards:hover {
+    z-index: 50;
   }
   .carousel-text2,
   .carousel-text3,
@@ -1451,3 +1485,4 @@
     background-color: rgba(255,255,255, 0.3);
     width: 1146px;
   }
+
