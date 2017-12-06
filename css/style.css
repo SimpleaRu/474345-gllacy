@@ -76,6 +76,8 @@
    position: absolute;
    top: 37px;
    left: -10px;
+   z-index: 2;
+   box-shadow: 0 10px 20px 5px rgba(0,0,0, 0.2);
  }
  .header-menu-catalog-submenu li {
    padding: 0;
@@ -432,6 +434,7 @@
       position: absolute;
       top: 63px;
       left: 844px;
+      z-index: 2;
   }
   .map-contacts p {
     font-size: 14px;
@@ -471,6 +474,9 @@
   }
   .map iframe {
     position: absolute;
+    border: 0;
+    top: 0;
+    z-index: 1;
     left: -27px;
   }
   .feed-back {
@@ -552,6 +558,7 @@
     top: 38px;
     position: absolute;
     visibility: hidden;
+    box-shadow: 0 10px 20px 5px rgba(0,0,0, 0.2);
   }
   .enter-form-gasket {
     position: absolute;
@@ -615,8 +622,8 @@
     position: absolute;
     left: -312px;
     top: 4px;
-   /*  visibility: hidden; */
-   display: none;
+    display: none;
+    box-shadow: 0 10px 20px 5px rgba(0,0,0, 0.2);
   }
   .search-form-wraper {
     position: absolute;
@@ -750,6 +757,7 @@
     left: -425px;
     padding-top: 5px;
     visibility: hidden;
+    box-shadow: 0 10px 20px 5px rgba(0,0,0, 0.2);
   }
   .basket-gasket {
     visibility: hidden;
@@ -1242,6 +1250,7 @@
   .carousel-changer input:checked + label::before {
     background-color: rgba(255,255,255, 1);
   }
+
   .catalog-ice-cream {
     width: 1146px;
     margin: 0;
