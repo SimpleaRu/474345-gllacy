@@ -21,7 +21,7 @@
   a {
     text-decoration: none;
   }
-  .site-wrapper header {
+  .header {
     padding: 10px 0 0 0; 
   }
   .main-navigation a {
@@ -112,10 +112,6 @@
   .enter-form a:hover {
     color:#e84d37;
   }
- /*  .enter-form-button-links p {
-  
-   
-  } */
   .enter-button > a::before {
     content:"";
     float: left; 
@@ -161,7 +157,6 @@
     padding: 6px;
   }
   .enter-search:hover  .search-form {
-    /* visibility: visible; */
     display: flex
   }
   .enter-chart > a::before {
@@ -211,21 +206,22 @@
   .catalog-ice-cream li,
   .main-path,
   .catalog-page-links,
-  .footer-links ul {
+  .footer-links ul,
+  .slider-list li {
       list-style: none;
   }
   .button {
-        background: #ec593c;
-        background: linear-gradient(to top, #e74b36, #f26843);
-        text-align: center;
-        padding: 7px 15px 7px 15px;
-        border-radius: 20px;
-        border: none;
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: bold;
-        color: white;
-        box-shadow:  0 2px 1px 0 #975a4b;
+    background: #ec593c;
+    background: linear-gradient(to top, #e74b36, #f26843);
+    text-align: center;
+    padding: 7px 15px 7px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: white;
+    box-shadow:  0 2px 1px 0 #975a4b;
   }
   .button:hover {
     background: #f38367;
@@ -330,7 +326,6 @@
     box-sizing: border-box;
     padding: 19px;
     border-radius: 20px;
-   
     padding-top: 23px;
   }
   .about-gllacy ul {
@@ -557,6 +552,7 @@
     position: absolute;
     visibility: hidden;
     box-shadow: 0 10px 20px 5px rgba(0,0,0, 0.2);
+    z-index: 2;
   }
   .enter-form-gasket {
     position: absolute;
@@ -646,7 +642,6 @@
   .subscription input:hover,
   .feed-back input:hover,
   .feed-back textarea:hover {
-    /* border: 1px solid #c7c6c5; */
     box-shadow: 0 0 0 2px #c7c6c5;
   }
   .search-form input:focus,
@@ -654,7 +649,6 @@
   .subscription input:focus,
   .feed-back input:focus,
   .feed-back textarea:focus  {
-   /*  border: 1px solid #8fbdec; */
     box-shadow: 0 0 0 2px #8fbdec;
   }
    .search-form input,
@@ -734,10 +728,10 @@
   }
   .header-phone-wraper {
     position: absolute;
-    left: 973px;
-    top: 72px;
+    left: 947px;
+    top: 74px;
     text-align: right;
-    z-index: -1;
+    z-index: 1;
     width: 200px;
   }
   .basket {
@@ -756,6 +750,7 @@
     padding-top: 5px;
     visibility: hidden;
     box-shadow: 0 10px 20px 5px rgba(0,0,0, 0.2);
+    z-index: 2;
   }
   .basket-gasket {
     visibility: hidden;
@@ -780,8 +775,7 @@
     vertical-align: middle;
   }
   .icy_table-description {
-    width: 220px;
-    
+    width: 220px; 
   }
   .basket .basket-price {
     color: #999999;
@@ -1004,25 +998,7 @@
   .header-menu-catalog-submenu li:first-child {
     border-bottom: 1px solid gray;
   }
-/* Сетки */
-/*   .main-navigation,
-  .container-main-menu,
-  .container-main-menu .header-menu,
-  .enter-menu,
-  .special-offers,
-  .ice-cream,
-  .container-recipe-subscription,
-  .about-gllacy ul,
-  .footer,
-  .footer-social ul,
-  .footer-links,
-  .carousel_wraper,
-  .carousel-changer,
-  .catalog-page-links,
-  .main-path {
-    background-color: rgba(199, 216, 37, 0.2);
-    outline: 1px solid rgba(12,21,16, 0.2);
-  } */
+
   .main-navigation {
     display: flex;
     justify-content: space-between;
@@ -1063,10 +1039,7 @@
   .enter-menu li:first-child {
     position: relative;
   }
-/*   .enter-menu > li,
-  .header-menu > li {
-    margin-right: 10px;
-  } */
+
   .ice-cream {
     margin: 0;
     padding: 0;
@@ -1180,40 +1153,7 @@
   .ice-cream-cards:hover {
     z-index: 50;
   }
-  .carousel-text2,
-  .carousel-text3,
-  .icy-image2,
-  .icy-image3 {
-    display: none;
-  }
 
-  .carousel-text1,
-  .carousel-text2,
-  .carousel-text3 {
-    position: absolute;
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: bold;
-    color: white;
-    margin: 0;
-    padding: 0;
-    top: 392px;
-    left: 250px;
-    width: 700px;
-    align-self: center;
-    text-align: center;
-  }
-/*   .carousel_wraper {
-    display: flex;
-    flex-direction: column;
-    width: 1146px;
-    min-height: 700px
-  } */
-/*   .carousel_wraper .button {
-    align-self: center;
-    margin-bottom: 40px;
-    margin-top: 470px;
-  } */
   .carousel-changer {
     padding: 0;
     margin: 0;
@@ -1241,9 +1181,12 @@
   .carousel-changer label:hover::before {
     background-color: rgba(255,255,255, 0.4);
   }
-  .carousel-changer input:checked + label::before {
+  #img1:checked  ~ * label[for="img1"]:before,
+  #img2:checked  ~ * label[for="img2"]:before,
+  #img3:checked  ~ * label[for="img3"]:before {
     background-color: rgba(255,255,255, 1);
   }
+
 
   .catalog-ice-cream {
     width: 1146px;
@@ -1270,11 +1213,53 @@
     background-position: top center;
     background-color: #849d8f;
   }
+  .site-wrapper::after {
+    background-image: url('../img/Icy_Front_2.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: none;
+  }
+  .site-wrapper::before {
+    background-image: url('../img/Icy_Front_3.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: none;
+  }
   .carousel_wraper {
     min-height: 500px;
     min-width: 1146px;
   }
-
+  .slide1,
+  .slide2,
+  .slide3 {
+    display: block;
+  }
+ 
+  .slider-list {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .carousel-text1,
+  .carousel-text2,
+  .carousel-text3 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto 30px;
+    padding: 0;
+    width: 700px;
+    text-align: center;
+  }
+  .carousel {
+    padding: 318px 0 0 0;
+    margin: 0 0 42px 0;
+  }
+  .slide2, 
+  .slide3 {
+    display: none;
+  }
   .main-path {
     padding: 0;
     margin: 0;
@@ -1323,30 +1308,37 @@
 }
 .price-line {
     position: relative;
-    height: 8px;
+    height: 4px;
     width: 190px;
     background-color: #d1dad3;
-    margin: 12px;
+    margin: 14px;
 }
 .line-knob1 {
     width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    height: 22px;
+    border-radius: 50%;
     background-color: #ffffff;
     position: absolute;
-    top: -6px;
+    top: -8px;
     left: 20px;
     cursor: pointer;
 }
+
 .line-knob2 {
     width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    height: 22px;
+    border-radius: 50%;
     background-color: #ffffff;
     position: absolute;
-    top: -6px;
+    top: -8px;
     left: 120px;
     cursor: pointer;
+}
+.line-knob1:hover,
+.line-knob2:hover {
+  height: 25px;
+  width: 22px;
+  top: -10px;
 }
 .knob-center {
     position: absolute;
@@ -1363,9 +1355,9 @@
 .center-line {
     position: absolute;
     width: 80px;
-    height: 6px;
+    height: 5px;
     background-color: #ffffff;
-    top: 1px;
+    top: 0px;
     left: 40px;
 }
   .fatness-list,
@@ -1424,16 +1416,6 @@
   .filters  .fatness-wraper {
     margin-right: 0;
   }
-/*   .fillers {
-    width: 703px;
-  }
-  .fillers-list {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  } */
   .heart {
     position: relative;
   }
@@ -1455,7 +1437,7 @@
     content: "";
     width: 22px;
     height: 22px;
-    border: 2px solid  rgba(255,255,255, 0.8);
+    border: 2px solid  #e6ebe9;
     position: absolute;
     top: 0;
     left: 0;
@@ -1477,6 +1459,9 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     visibility: hidden;
+  }
+  .fillers-list label:hover::after {
+    background-image: url('../img/checkbox-on-hover.svg');
   }
   .fillers-list input:checked + label::after {
     visibility: visible;
