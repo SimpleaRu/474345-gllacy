@@ -9,7 +9,7 @@
     background: #849d8f;
     color: #ffffff;
     box-sizing: border-box;
-    padding: 10px 27px 27px 27px;
+    padding: 0 27px 27px 27px;
   }
   .visibility-hidden {
     position: absolute;
@@ -21,9 +21,8 @@
   a {
     text-decoration: none;
   }
-  .carousel img {
-      width: 1045px;
-      height: 881px;
+  .site-wrapper header {
+    padding: 10px 0 0 0; 
   }
   .main-navigation a {
     font-size: 16px;
@@ -206,7 +205,6 @@
   .main-navigation li,
   .sales-hits li,
   .about-gllacy li,
-  .carousel-img,
   .footer li,
   .catalog-ice-cream li,
   .main-path,
@@ -1146,12 +1144,7 @@
   .icy-image3 {
     display: none;
   }
-  .carousel {
-    position: absolute;
-    top: 0;
-    left: 80px;
-    z-index: -1;
-  }
+
   .carousel-text1,
   .carousel-text2,
   .carousel-text3 {
@@ -1168,16 +1161,17 @@
     align-self: center;
     text-align: center;
   }
-  .carousel_wraper {
+/*   .carousel_wraper {
     display: flex;
     flex-direction: column;
     width: 1146px;
-  }
-  .carousel_wraper .button {
+    min-height: 700px
+  } */
+/*   .carousel_wraper .button {
     align-self: center;
     margin-bottom: 40px;
     margin-top: 470px;
-  }
+  } */
   .carousel-changer {
     padding: 0;
     margin: 0;
@@ -1223,6 +1217,21 @@
     padding-top: 5px;
     width: 1146px; 
   }
+
+  .site-wrapper {
+    min-height: 700px;
+    width: 1146px;
+    position: relative;
+    background-image: url('../img/Icy_Front_1.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #849d8f;
+  }
+  .carousel_wraper {
+    min-height: 500px;
+    min-width: 1146px;
+  }
+
   .main-path {
     padding: 0;
     margin: 0;
