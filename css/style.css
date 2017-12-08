@@ -1112,9 +1112,11 @@
     visibility: hidden;
     position: absolute;
     top: 334px;
+    left: 35px;
     z-index: 11;
     padding: 10px 15px 9px 15px;
   }
+  
   .ice-cream .ice-cream-description {
     text-align: center;
     margin-top: 13px;
@@ -1122,7 +1124,7 @@
   }
   .ice-cream-price {
     position: absolute;
-    top: 210px;
+    top: 209px;
     left: 0;
   }
   .sales-hits .ice-cream-cards::before {
