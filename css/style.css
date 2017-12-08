@@ -22,7 +22,7 @@
     text-decoration: none;
   }
   .header {
-    padding: 10px 0 0 0; 
+    padding: 7px 0 0 0; 
   }
   .main-navigation a {
     font-size: 16px;
@@ -870,7 +870,7 @@
     color: white;
     width: 1146px;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
   .filters {
     font-size: 16px;
@@ -1003,6 +1003,7 @@
     display: flex;
     justify-content: space-between;
     width: 1146px;
+    min-height: 67px;
   }
   .container-main-menu {
     display: flex;
@@ -1017,7 +1018,7 @@
     padding: 0;
     flex-wrap: wrap;
     width: 371px;
-    margin-top: 10px;
+    margin-top: 11px;
     align-items: center;
   }
   .enter-menu {
@@ -1025,7 +1026,7 @@
     justify-content: space-between;
     padding: 0;
     width: 260px;
-    margin-top: 12px;
+    margin-top: 15px;
   }
   .enter-button {
     position: relative;
