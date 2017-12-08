@@ -1184,9 +1184,9 @@
   .carousel-changer label:hover::before {
     background-color: rgba(255,255,255, 0.4);
   }
-  #img1:checked  ~ * label[for="img1"]:before,
-  #img2:checked  ~ * label[for="img2"]:before,
-  #img3:checked  ~ * label[for="img3"]:before {
+  .img1:checked  ~ * label[for="img1"]:before,
+  .img2:checked  ~ * label[for="img2"]:before,
+  .img3:checked  ~ * label[for="img3"]:before {
     background-color: rgba(255,255,255, 1);
   }
 
