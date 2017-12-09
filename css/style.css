@@ -888,7 +888,7 @@ background: #f6b5a5;
   margin-bottom: 29px;
 }
 .filters input:focus + label {
-  outline: #4d90fe solid 1px;
+  outline: rgb(240, 235, 235) dotted 1px;
 }
 .filters form {
   display: flex;
