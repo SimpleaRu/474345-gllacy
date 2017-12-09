@@ -29,6 +29,9 @@ a {
 .header {
   padding: 7px 0 0 0; 
 }
+.maincontaner {
+  margin: -5px 0 0 0;
+}
 .main-navigation a {
   font-size: 16px;
   font-weight: bold;
@@ -43,14 +46,14 @@ a {
 .header-menu-company {
   border-radius: 15px;
   text-align: center;
-  padding: 7px 12px;
+  padding: 8px 11px;
 }
 .header-menu-catalog:hover,
 .header-menu-delivery:hover,
 .header-menu-company:hover {
-background-color: rgb(247, 246, 243);
-color:#333333;
-text-decoration: none;
+  background-color: rgb(247, 246, 243);
+  color:#333333;
+  text-decoration: none;
 }
 .header-menu-catalog:active,
 .header-menu-delivery:active,
@@ -72,10 +75,10 @@ text-decoration: none;
 .header-menu-catalog-submenu {
   visibility: hidden;
   background: white;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 143px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 3px 0;
   position: absolute;
   top: 37px;
   left: -10px;
@@ -88,14 +91,14 @@ text-decoration: none;
 }
 .header-menu-catalog-submenu a {
   display: block;
-  padding: 9px 10px 9px 20px;
+  padding: 8px 10px 8px 20px;
 }
 
 .header-menu-catalog-submenu li:hover {
   background: #fbded7;
 }
 .header-menu-catalog-submenu li:active {
-background: #f6b5a5;
+  background: #f6b5a5;
 }
 
 .header-menu-catalog-submenu a {
@@ -203,6 +206,9 @@ background: #f6b5a5;
 .header-menu .bold {
   font-weight: bold;
 }
+.header-menu-catalog-submenu .bold {
+  padding: 12px 20px 10px 20px;
+}
 .main-navigation li,
 .sales-hits li,
 .about-gllacy li,
@@ -212,7 +218,7 @@ background: #f6b5a5;
 .catalog-page-links,
 .footer-links ul,
 .slider-list li {
-    list-style: none;
+  list-style: none;
 }
 .button {
   background: #ec593c;
@@ -422,16 +428,16 @@ background: #f6b5a5;
 }
 
 .map-contacts {
-    width: 302px;
-    height: 305px;
-    background: white;
-    border-radius: 15px;
-    box-sizing: border-box;
-    padding: 25px;
-    position: absolute;
-    top: 63px;
-    left: 844px;
-    z-index: 2;
+  width: 302px;
+  height: 305px;
+  background: white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 25px;
+  position: absolute;
+  top: 63px;
+  left: 844px;
+  z-index: 2;
 }
 .map-contacts p {
   font-size: 14px;
@@ -486,7 +492,7 @@ background: #f6b5a5;
   padding: 17px 25px 25px 25px;
   position: fixed;
   top: 10%;
-  left: 362px;
+  left: calc(50% - 239px);
   z-index: 100;
   visibility: hidden;
 }
@@ -924,7 +930,6 @@ background: #f6b5a5;
   color: black;
   background-image: url('../img/icon-down-dir-black.svg');
 }
-
 .filters-select option {
   color: black;
 }
@@ -987,7 +992,7 @@ background: #f6b5a5;
   background-color: #d07058;
   border-radius: 15px;
   text-align: center;
-  padding: 8px 10px;
+  padding: 8px 11px;
 }
 .ice-cream li {
   width: 267px;
@@ -1016,6 +1021,7 @@ background: #f6b5a5;
 .container-main-menu {
   display: flex;
   justify-content: space-between;
+  padding-top: 2px;
 }
 .container-main-menu img {
   margin-right: 13px;
@@ -1028,6 +1034,8 @@ background: #f6b5a5;
   width: 371px;
   margin-top: 11px;
   align-items: center;
+  padding-bottom: 3px;
+  min-height: 41px;
 }
 .enter-menu {
   display: flex;
@@ -1262,7 +1270,7 @@ background: #f6b5a5;
   text-align: center;
 }
 .carousel {
-  padding: 318px 0 0 0;
+  padding: 312px 0 0 0;
   margin: 0 0 42px 0;
 }
 .slide2, 
