@@ -587,7 +587,7 @@ a {
 }
 
 .feed-back .feed-close-button {
-  background: url('../img/Х-big.svg') 50% 50% no-repeat;
+  background: url('../img/close-button.svg') 50% 50% no-repeat;
   width: 18px;
   height: 18px;
   border: none;
@@ -864,7 +864,7 @@ a {
   width: 100%;
 }
 .basket .close-button  {
-  background: url('../img/Х-big.svg') 50% 50% no-repeat;
+  background: url('../img/close-button.svg') 50% 50% no-repeat;
   width: 11px;
   height: 11px;
   border: none;
